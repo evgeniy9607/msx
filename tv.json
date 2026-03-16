@@ -1,0 +1,95 @@
+{
+  "type": "list",
+  "headline": "ТВ Каналы",
+  "template": {
+    "type": "separate",
+    "layout": "0,0,4,4",
+    "color": "msx-glass"
+  },
+  "items": [
+    {
+      "label": "Первый канал",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/1tv.ru",
+      "color": "#003087",
+      "action": "panel:https://www.1tv.ru/live"
+    },
+    {
+      "label": "Россия 1",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/russia.tv",
+      "color": "#C8102E",
+      "action": "panel:https://smotrim.ru/live/4"
+    },
+    {
+      "label": "НТВ",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/ntv.ru",
+      "color": "#007A33",
+      "action": "panel:https://www.ntv.ru/tv/efir/"
+    },
+    {
+      "label": "Матч ТВ",
+      "sublabel": "Спорт",
+      "image": "https://logo.clearbit.com/matchtv.ru",
+      "color": "#FF6B00",
+      "action": "panel:https://matchtv.ru/on-air"
+    },
+    {
+      "label": "Россия 24",
+      "sublabel": "Новости",
+      "image": "https://logo.clearbit.com/russia.tv",
+      "color": "#1A3A6C",
+      "action": "panel:https://smotrim.ru/live/5"
+    },
+    {
+      "label": "РЕН ТВ",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/ren.tv",
+      "color": "#880000",
+      "action": "panel:https://ren.tv/live"
+    },
+    {
+      "label": "ТНТ",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/tnt-online.ru",
+      "color": "#CC0000",
+      "action": "panel:https://www.tnt-online.ru/live/"
+    },
+    {
+      "label": "СТС",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/ctc.ru",
+      "color": "#FF5A00",
+      "action": "panel:https://ctc.ru/"
+    },
+    {
+      "label": "Пятница",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/friday.ru",
+      "color": "#FF4F00",
+      "action": "panel:https://friday.ru/live"
+    },
+    {
+      "label": "ТВ-3",
+      "sublabel": "Мистика и фантастика",
+      "image": "https://logo.clearbit.com/tv3.ru",
+      "color": "#5B2D8E",
+      "action": "panel:https://tv3.ru/"
+    },
+    {
+      "label": "Пятый канал",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/5-tv.ru",
+      "color": "#0056A2",
+      "action": "panel:https://www.5-tv.ru/online/"
+    },
+    {
+      "label": "Звезда",
+      "sublabel": "Прямой эфир",
+      "image": "https://logo.clearbit.com/tvzvezda.ru",
+      "color": "#CC0000",
+      "action": "panel:https://tvzvezda.ru/schedule/air/"
+    }
+  ]
+}

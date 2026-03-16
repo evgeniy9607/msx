@@ -1,0 +1,46 @@
+{
+  "type": "list",
+  "headline": "Бесплатный контент",
+  "template": {
+    "type": "separate",
+    "layout": "0,0,4,4",
+    "color": "msx-glass"
+  },
+  "items": [
+    {
+      "label": "YouTube",
+      "sublabel": "Видео на любой вкус",
+      "image": "https://logo.clearbit.com/youtube.com",
+      "color": "#FF0000",
+      "action": "panel:https://www.youtube.com"
+    },
+    {
+      "label": "RuTube",
+      "sublabel": "Российское видео",
+      "image": "https://logo.clearbit.com/rutube.ru",
+      "color": "#1A1ADB",
+      "action": "panel:https://rutube.ru"
+    },
+    {
+      "label": "Смотрим",
+      "sublabel": "ВГТРК онлайн",
+      "image": "https://logo.clearbit.com/smotrim.ru",
+      "color": "#C8102E",
+      "action": "panel:https://smotrim.ru"
+    },
+    {
+      "label": "ВКонтакте Видео",
+      "sublabel": "Видео и клипы",
+      "image": "https://logo.clearbit.com/vk.com",
+      "color": "#0077FF",
+      "action": "panel:https://vk.com/video"
+    },
+    {
+      "label": "Одноклассники",
+      "sublabel": "Видео и трансляции",
+      "image": "https://logo.clearbit.com/ok.ru",
+      "color": "#EE8208",
+      "action": "panel:https://ok.ru/video"
+    }
+  ]
+}
