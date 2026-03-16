@@ -1,0 +1,81 @@
+{
+  "type": "list",
+  "headline": "Стриминговые сервисы",
+  "template": {
+    "type": "separate",
+    "layout": "0,0,4,4",
+    "color": "msx-glass"
+  },
+  "items": [
+    {
+      "label": "Кинопоиск HD",
+      "sublabel": "Фильмы и сериалы",
+      "image": "https://logo.clearbit.com/kinopoisk.ru",
+      "color": "#FF6400",
+      "action": "panel:https://hd.kinopoisk.ru"
+    },
+    {
+      "label": "IVI",
+      "sublabel": "Фильмы и сериалы",
+      "image": "https://logo.clearbit.com/ivi.ru",
+      "color": "#00AACC",
+      "action": "panel:https://www.ivi.ru"
+    },
+    {
+      "label": "Okko",
+      "sublabel": "Фильмы, сериалы, спорт",
+      "image": "https://logo.clearbit.com/okko.tv",
+      "color": "#222222",
+      "action": "panel:https://okko.tv"
+    },
+    {
+      "label": "Premier",
+      "sublabel": "Сериалы и шоу",
+      "image": "https://logo.clearbit.com/premier.one",
+      "color": "#0A0A1A",
+      "action": "panel:https://premier.one"
+    },
+    {
+      "label": "START",
+      "sublabel": "Оригинальные сериалы",
+      "image": "https://logo.clearbit.com/start.ru",
+      "color": "#1C1C1C",
+      "action": "panel:https://start.ru"
+    },
+    {
+      "label": "Megogo",
+      "sublabel": "Фильмы, ТВ, спорт",
+      "image": "https://logo.clearbit.com/megogo.net",
+      "color": "#009DE0",
+      "action": "panel:https://megogo.net/ru"
+    },
+    {
+      "label": "Амедиатека",
+      "sublabel": "HBO и мировые хиты",
+      "image": "https://logo.clearbit.com/amediateka.ru",
+      "color": "#2B2B2B",
+      "action": "panel:https://www.amediateka.ru"
+    },
+    {
+      "label": "More.tv",
+      "sublabel": "Стриминг НМГ",
+      "image": "https://logo.clearbit.com/more.tv",
+      "color": "#00A3E0",
+      "action": "panel:https://more.tv"
+    },
+    {
+      "label": "Kion",
+      "sublabel": "МТС стриминг",
+      "image": "https://logo.clearbit.com/kion.ru",
+      "color": "#6B1FCD",
+      "action": "panel:https://kion.ru"
+    },
+    {
+      "label": "Wink",
+      "sublabel": "Ростелеком",
+      "image": "https://logo.clearbit.com/wink.ru",
+      "color": "#FF4B00",
+      "action": "panel:https://wink.ru"
+    }
+  ]
+}
