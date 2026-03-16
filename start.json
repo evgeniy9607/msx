@@ -1,0 +1,14 @@
+{
+  "type": "menu",
+  "headline": "Мой портал",
+  "items": [
+    {
+      "label": "Источник 1",
+      "action": "content:https://evgeniy9607.github.io/msx/menu1.json"
+    },
+    {
+      "label": "Источник 2",
+      "action": "content:https://evgeniy9607.github.io/msx/menu2.json"
+    }
+  ]
+}
