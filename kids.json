@@ -1,5 +1,6 @@
 {
   "type": "list",
+  "compress": true,
   "headline": "Детский контент",
   "template": {
     "type": "separate",

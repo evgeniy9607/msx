@@ -1,5 +1,6 @@
 {
   "type": "list",
+  "compress": true,
   "headline": "Бесплатный контент",
   "template": {
     "type": "separate",

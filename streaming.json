@@ -1,5 +1,6 @@
 {
   "type": "list",
+  "compress": true,
   "headline": "Стриминговые сервисы",
   "template": {
     "type": "separate",
