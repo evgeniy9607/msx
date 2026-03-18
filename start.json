@@ -3,7 +3,8 @@
   "headline": "Smart TV Портал",
   "background": "#1A1A1A",
   "template": {
-    "layout": "0,0,2,2",
+    "type": "separate",
+    "layout": "0,0,1,2",
     "color": "msx-glass"
   },
   "items": [
