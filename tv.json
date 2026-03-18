@@ -1,5 +1,6 @@
 {
   "type": "list",
+  "compress": true,
   "headline": "ТВ Каналы",
   "template": {
     "type": "separate",
