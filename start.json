@@ -2,14 +2,16 @@
   "type": "list",
   "headline": "Smart TV Портал",
   "background": "#1A1A1A",
+  "template": {
+    "layout": "0,0,3,4",
+    "color": "msx-glass",
+    "imageFiller": "width-center",
+    "imageWidth": 2,
+    "imageHeight": 2
+  },
   "items": [
     {
-      "layout": "0,0,12,1",
-      "label": "● СТРИМИНГ",
-      "color": "#2A1400"
-    },
-    {
-      "layout": "0,1,3,4",
+      "group": "СТРИМИНГ",
       "label": "Кинопоиск HD",
       "sublabel": "Фильмы и сериалы",
       "image": "https://logo.clearbit.com/kinopoisk.ru",
@@ -17,7 +19,6 @@
       "action": "panel:https://hd.kinopoisk.ru"
     },
     {
-      "layout": "3,1,3,4",
       "label": "IVI",
       "sublabel": "Фильмы и сериалы",
       "image": "https://logo.clearbit.com/ivi.ru",
@@ -25,15 +26,13 @@
       "action": "panel:https://www.ivi.ru"
     },
     {
-      "layout": "6,1,3,4",
       "label": "Okko",
       "sublabel": "Фильмы, сериалы, спорт",
       "image": "https://logo.clearbit.com/okko.tv",
-      "color": "#333333",
+      "color": "#222222",
       "action": "panel:https://okko.tv"
     },
     {
-      "layout": "9,1,3,4",
       "label": "Premier",
       "sublabel": "Сериалы и шоу",
       "image": "https://logo.clearbit.com/premier.one",
@@ -41,7 +40,6 @@
       "action": "panel:https://premier.one"
     },
     {
-      "layout": "0,5,3,4",
       "label": "START",
       "sublabel": "Оригинальные сериалы",
       "image": "https://logo.clearbit.com/start.ru",
@@ -49,7 +47,6 @@
       "action": "panel:https://start.ru"
     },
     {
-      "layout": "3,5,3,4",
       "label": "Megogo",
       "sublabel": "Фильмы, ТВ, спорт",
       "image": "https://logo.clearbit.com/megogo.net",
@@ -57,7 +54,6 @@
       "action": "panel:https://megogo.net/ru"
     },
     {
-      "layout": "6,5,3,4",
       "label": "Амедиатека",
       "sublabel": "HBO и мировые хиты",
       "image": "https://logo.clearbit.com/amediateka.ru",
@@ -65,7 +61,6 @@
       "action": "panel:https://www.amediateka.ru"
     },
     {
-      "layout": "9,5,3,4",
       "label": "More.tv",
       "sublabel": "Стриминг НМГ",
       "image": "https://logo.clearbit.com/more.tv",
@@ -73,7 +68,6 @@
       "action": "panel:https://more.tv"
     },
     {
-      "layout": "0,9,3,4",
       "label": "Kion",
       "sublabel": "МТС стриминг",
       "image": "https://logo.clearbit.com/kion.ru",
@@ -81,7 +75,6 @@
       "action": "panel:https://kion.ru"
     },
     {
-      "layout": "3,9,3,4",
       "label": "Wink",
       "sublabel": "Ростелеком",
       "image": "https://logo.clearbit.com/wink.ru",
@@ -89,12 +82,7 @@
       "action": "panel:https://wink.ru"
     },
     {
-      "layout": "0,13,12,1",
-      "label": "● БЕСПЛАТНО",
-      "color": "#2A1400"
-    },
-    {
-      "layout": "0,14,3,4",
+      "group": "БЕСПЛАТНО",
       "label": "YouTube",
       "sublabel": "Видео на любой вкус",
       "image": "https://logo.clearbit.com/youtube.com",
@@ -102,7 +90,6 @@
       "action": "panel:https://www.youtube.com"
     },
     {
-      "layout": "3,14,3,4",
       "label": "RuTube",
       "sublabel": "Российское видео",
       "image": "https://logo.clearbit.com/rutube.ru",
@@ -110,7 +97,6 @@
       "action": "panel:https://rutube.ru"
     },
     {
-      "layout": "6,14,3,4",
       "label": "Смотрим",
       "sublabel": "ВГТРК онлайн",
       "image": "https://logo.clearbit.com/smotrim.ru",
@@ -118,7 +104,6 @@
       "action": "panel:https://smotrim.ru"
     },
     {
-      "layout": "9,14,3,4",
       "label": "ВКонтакте Видео",
       "sublabel": "Видео и клипы",
       "image": "https://logo.clearbit.com/vk.com",
@@ -126,7 +111,6 @@
       "action": "panel:https://vk.com/video"
     },
     {
-      "layout": "0,18,3,4",
       "label": "Одноклассники",
       "sublabel": "Видео и трансляции",
       "image": "https://logo.clearbit.com/ok.ru",
@@ -134,12 +118,7 @@
       "action": "panel:https://ok.ru/video"
     },
     {
-      "layout": "0,22,12,1",
-      "label": "● ТВ КАНАЛЫ",
-      "color": "#2A1400"
-    },
-    {
-      "layout": "0,23,3,4",
+      "group": "ТВ КАНАЛЫ",
       "label": "Первый канал",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/1tv.ru",
@@ -147,7 +126,6 @@
       "action": "panel:https://www.1tv.ru/live"
     },
     {
-      "layout": "3,23,3,4",
       "label": "Россия 1",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/russia.tv",
@@ -155,7 +133,6 @@
       "action": "panel:https://smotrim.ru/live/4"
     },
     {
-      "layout": "6,23,3,4",
       "label": "НТВ",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/ntv.ru",
@@ -163,7 +140,6 @@
       "action": "panel:https://www.ntv.ru/tv/efir/"
     },
     {
-      "layout": "9,23,3,4",
       "label": "Матч ТВ",
       "sublabel": "Спорт",
       "image": "https://logo.clearbit.com/matchtv.ru",
@@ -171,7 +147,6 @@
       "action": "panel:https://matchtv.ru/on-air"
     },
     {
-      "layout": "0,27,3,4",
       "label": "Россия 24",
       "sublabel": "Новости",
       "image": "https://logo.clearbit.com/russia.tv",
@@ -179,7 +154,6 @@
       "action": "panel:https://smotrim.ru/live/5"
     },
     {
-      "layout": "3,27,3,4",
       "label": "РЕН ТВ",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/ren.tv",
@@ -187,7 +161,6 @@
       "action": "panel:https://ren.tv/live"
     },
     {
-      "layout": "6,27,3,4",
       "label": "ТНТ",
       "sublabel": "Развлечения",
       "image": "https://logo.clearbit.com/tnt-online.ru",
@@ -195,7 +168,6 @@
       "action": "panel:https://www.tnt-online.ru/live/"
     },
     {
-      "layout": "9,27,3,4",
       "label": "СТС",
       "sublabel": "Развлечения",
       "image": "https://logo.clearbit.com/ctc.ru",
@@ -203,7 +175,6 @@
       "action": "panel:https://ctc.ru/"
     },
     {
-      "layout": "0,31,3,4",
       "label": "Пятница",
       "sublabel": "Развлечения",
       "image": "https://logo.clearbit.com/friday.ru",
@@ -211,7 +182,6 @@
       "action": "panel:https://friday.ru/live"
     },
     {
-      "layout": "3,31,3,4",
       "label": "ТВ-3",
       "sublabel": "Мистика и фантастика",
       "image": "https://logo.clearbit.com/tv3.ru",
@@ -219,7 +189,6 @@
       "action": "panel:https://tv3.ru/"
     },
     {
-      "layout": "6,31,3,4",
       "label": "Пятый канал",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/5-tv.ru",
@@ -227,7 +196,6 @@
       "action": "panel:https://www.5-tv.ru/online/"
     },
     {
-      "layout": "9,31,3,4",
       "label": "Звезда",
       "sublabel": "Прямой эфир",
       "image": "https://logo.clearbit.com/tvzvezda.ru",
@@ -235,20 +203,14 @@
       "action": "panel:https://tvzvezda.ru/schedule/air/"
     },
     {
-      "layout": "0,35,12,1",
-      "label": "● ДЕТЯМ",
-      "color": "#2A1400"
-    },
-    {
-      "layout": "0,36,3,4",
+      "group": "ДЕТЯМ",
       "label": "YouTube Kids",
-      "sublabel": "Безопасное видео",
+      "sublabel": "Безопасное видео для детей",
       "image": "https://logo.clearbit.com/youtube.com",
       "color": "#FF0000",
       "action": "panel:https://www.youtubekids.com"
     },
     {
-      "layout": "3,36,3,4",
       "label": "IVI Детям",
       "sublabel": "Мультфильмы и сказки",
       "image": "https://logo.clearbit.com/ivi.ru",
@@ -256,7 +218,6 @@
       "action": "panel:https://www.ivi.ru/kids"
     },
     {
-      "layout": "6,36,3,4",
       "label": "Мульт",
       "sublabel": "Телеканал мультфильмов",
       "image": "https://logo.clearbit.com/mult.ru",
@@ -264,7 +225,6 @@
       "action": "panel:https://mult.ru/online"
     },
     {
-      "layout": "9,36,3,4",
       "label": "Карусель",
       "sublabel": "Детский телеканал",
       "image": "https://logo.clearbit.com/karusel.tv",
@@ -272,7 +232,6 @@
       "action": "panel:https://karusel.tv/air"
     },
     {
-      "layout": "0,40,3,4",
       "label": "Мульт Россия",
       "sublabel": "Советские мультфильмы",
       "image": "https://logo.clearbit.com/smotrim.ru",
