@@ -54,7 +54,7 @@
     },
     {
       "label": "Детям",
-      "icon": "msx-white-s:child_care",
+      "icon": "msx-white-s:smart_toy",
       "image": "https://evgeniy9607.github.io/msx/gradient.svg",
       "options": [
         {"label": "YouTube Kids", "icon": "msx-white-s:child_care", "action": "panel:https://www.youtubekids.com"},
