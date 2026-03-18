@@ -4,7 +4,7 @@
   "background": "#555555",
   "template": {
     "type": "separate",
-    "layout": "0,0,12,1"
+    "layout": "0,0,12,3"
   },
   "items": [
     {
