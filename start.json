@@ -1,31 +1,34 @@
 {
   "type": "list",
   "headline": "Smart TV Портал",
+  "background": "#555555",
   "template": {
     "type": "separate",
-    "layout": "0,0,6,2",
-    "icon": "msx-white",
-    "color": "msx-glass"
+    "layout": "0,0,12,2"
   },
   "items": [
     {
       "label": "Стриминг",
-      "icon": "msx-white:subscriptions",
+      "icon": "msx-white-s:subscriptions",
+      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
       "action": "content:https://evgeniy9607.github.io/msx/streaming.json"
     },
     {
       "label": "Бесплатно",
-      "icon": "msx-white:star",
+      "icon": "msx-white-s:star",
+      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
       "action": "content:https://evgeniy9607.github.io/msx/free.json"
     },
     {
       "label": "ТВ Каналы",
-      "icon": "msx-white:tv",
+      "icon": "msx-white-s:tv",
+      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
       "action": "content:https://evgeniy9607.github.io/msx/tv.json"
     },
     {
       "label": "Детям",
-      "icon": "msx-white:child_care",
+      "icon": "msx-white-s:child_care",
+      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
       "action": "content:https://evgeniy9607.github.io/msx/kids.json"
     }
   ]
