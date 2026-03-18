@@ -1,6 +1,7 @@
 {
   "headline": "Smart TV Портал",
-  "background": "#1A1A1A",
+  "transparent": 2,
+  "background": "https://evgeniy9607.github.io/msx/background.png",
   "menu": [
     {
       "icon": "movie",
