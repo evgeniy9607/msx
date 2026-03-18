@@ -7,9 +7,9 @@
     "layout": "0,0,3,4",
     "color": "msx-glass"
   },
-  "pages": [
+  "items": [
     {
-      "headline": "Стриминг",
+      "label": "Стриминг",
       "items": [
         {"label": "Кинопоиск", "image": "https://logo.clearbit.com/kinopoisk.ru", "color": "#FF6400", "action": "panel:https://hd.kinopoisk.ru"},
         {"label": "IVI", "image": "https://logo.clearbit.com/ivi.ru", "color": "#00A8E0", "action": "panel:https://www.ivi.ru"},
@@ -24,7 +24,7 @@
       ]
     },
     {
-      "headline": "Бесплатно",
+      "label": "Бесплатно",
       "items": [
         {"label": "YouTube", "image": "https://logo.clearbit.com/youtube.com", "color": "#FF0000", "action": "panel:https://www.youtube.com"},
         {"label": "RuTube", "image": "https://logo.clearbit.com/rutube.ru", "color": "#1A1ADB", "action": "panel:https://rutube.ru"},
@@ -34,7 +34,7 @@
       ]
     },
     {
-      "headline": "ТВ Каналы",
+      "label": "ТВ Каналы",
       "items": [
         {"label": "Первый канал", "image": "https://logo.clearbit.com/1tv.ru", "color": "#003087", "action": "panel:https://www.1tv.ru/live"},
         {"label": "Россия 1", "image": "https://logo.clearbit.com/russia.tv", "color": "#C8102E", "action": "panel:https://smotrim.ru/live/4"},
@@ -49,7 +49,7 @@
       ]
     },
     {
-      "headline": "Детям",
+      "label": "Детям",
       "items": [
         {"label": "YouTube Kids", "image": "https://logo.clearbit.com/youtube.com", "color": "#FF0000", "action": "panel:https://www.youtubekids.com"},
         {"label": "IVI Детям", "image": "https://logo.clearbit.com/ivi.ru", "color": "#00A8E0", "action": "panel:https://www.ivi.ru/kids"},
