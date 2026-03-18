@@ -1,66 +1,60 @@
 {
-  "type": "list",
+  "type": "pages",
   "headline": "Smart TV Портал",
-  "background": "#555555",
+  "background": "#444444",
   "template": {
     "type": "separate",
-    "layout": "0,0,12,3"
+    "layout": "0,0,3,4",
+    "color": "msx-glass"
   },
-  "items": [
+  "pages": [
     {
-      "label": "Стриминг",
-      "icon": "msx-white-s:subscriptions",
-      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
-      "options": [
-        {"label": "Кинопоиск", "icon": "msx-white-s:movie", "action": "panel:https://hd.kinopoisk.ru"},
-        {"label": "IVI", "icon": "msx-white-s:play_circle", "action": "panel:https://www.ivi.ru"},
-        {"label": "Okko", "icon": "msx-white-s:ondemand_video", "action": "panel:https://okko.tv"},
-        {"label": "Premier", "icon": "msx-white-s:live_tv", "action": "panel:https://premier.one"},
-        {"label": "START", "icon": "msx-white-s:play_arrow", "action": "panel:https://start.ru"},
-        {"label": "Megogo", "icon": "msx-white-s:video_library", "action": "panel:https://megogo.net/ru"},
-        {"label": "Амедиатека", "icon": "msx-white-s:local_movies", "action": "panel:https://www.amediateka.ru"},
-        {"label": "More.tv", "icon": "msx-white-s:smart_display", "action": "panel:https://more.tv"},
-        {"label": "Kion", "icon": "msx-white-s:tv", "action": "panel:https://kion.ru"},
-        {"label": "Wink", "icon": "msx-white-s:play_circle_filled", "action": "panel:https://wink.ru"}
+      "headline": "Стриминг",
+      "items": [
+        {"label": "Кинопоиск", "image": "https://logo.clearbit.com/kinopoisk.ru", "color": "#FF6400", "action": "panel:https://hd.kinopoisk.ru"},
+        {"label": "IVI", "image": "https://logo.clearbit.com/ivi.ru", "color": "#00A8E0", "action": "panel:https://www.ivi.ru"},
+        {"label": "Okko", "image": "https://logo.clearbit.com/okko.tv", "color": "#E50914", "action": "panel:https://okko.tv"},
+        {"label": "Premier", "image": "https://logo.clearbit.com/premier.one", "color": "#1B1B3A", "action": "panel:https://premier.one"},
+        {"label": "START", "image": "https://logo.clearbit.com/start.ru", "color": "#2A2A2A", "action": "panel:https://start.ru"},
+        {"label": "Megogo", "image": "https://logo.clearbit.com/megogo.net", "color": "#009DE0", "action": "panel:https://megogo.net/ru"},
+        {"label": "Амедиатека", "image": "https://logo.clearbit.com/amediateka.ru", "color": "#1A1A1A", "action": "panel:https://www.amediateka.ru"},
+        {"label": "More.tv", "image": "https://logo.clearbit.com/more.tv", "color": "#00A3E0", "action": "panel:https://more.tv"},
+        {"label": "Kion", "image": "https://logo.clearbit.com/kion.ru", "color": "#6B1FCD", "action": "panel:https://kion.ru"},
+        {"label": "Wink", "image": "https://logo.clearbit.com/wink.ru", "color": "#FF4B00", "action": "panel:https://wink.ru"}
       ]
     },
     {
-      "label": "Бесплатно",
-      "icon": "msx-white-s:star",
-      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
-      "options": [
-        {"label": "YouTube", "icon": "msx-white-s:play_arrow", "action": "panel:https://www.youtube.com"},
-        {"label": "RuTube", "icon": "msx-white-s:play_circle", "action": "panel:https://rutube.ru"},
-        {"label": "Смотрим", "icon": "msx-white-s:live_tv", "action": "panel:https://smotrim.ru"},
-        {"label": "ВК Видео", "icon": "msx-white-s:video_library", "action": "panel:https://vk.com/video"},
-        {"label": "ОК Видео", "icon": "msx-white-s:ondemand_video", "action": "panel:https://ok.ru/video"}
+      "headline": "Бесплатно",
+      "items": [
+        {"label": "YouTube", "image": "https://logo.clearbit.com/youtube.com", "color": "#FF0000", "action": "panel:https://www.youtube.com"},
+        {"label": "RuTube", "image": "https://logo.clearbit.com/rutube.ru", "color": "#1A1ADB", "action": "panel:https://rutube.ru"},
+        {"label": "Смотрим", "image": "https://logo.clearbit.com/smotrim.ru", "color": "#C8102E", "action": "panel:https://smotrim.ru"},
+        {"label": "ВК Видео", "image": "https://logo.clearbit.com/vk.com", "color": "#0077FF", "action": "panel:https://vk.com/video"},
+        {"label": "ОК Видео", "image": "https://logo.clearbit.com/ok.ru", "color": "#EE8208", "action": "panel:https://ok.ru/video"}
       ]
     },
     {
-      "label": "ТВ Каналы",
-      "icon": "msx-white-s:tv",
-      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
-      "options": [
-        {"label": "Первый канал", "icon": "msx-white-s:tv", "action": "panel:https://www.1tv.ru/live"},
-        {"label": "Россия 1", "icon": "msx-white-s:tv", "action": "panel:https://smotrim.ru/live/4"},
-        {"label": "НТВ", "icon": "msx-white-s:tv", "action": "panel:https://www.ntv.ru/tv/efir/"},
-        {"label": "Матч ТВ", "icon": "msx-white-s:sports", "action": "panel:https://matchtv.ru/on-air"},
-        {"label": "ТНТ", "icon": "msx-white-s:tv", "action": "panel:https://www.tnt-online.ru/live/"},
-        {"label": "СТС", "icon": "msx-white-s:tv", "action": "panel:https://ctc.ru/"},
-        {"label": "РЕН ТВ", "icon": "msx-white-s:tv", "action": "panel:https://ren.tv/live"},
-        {"label": "Пятница", "icon": "msx-white-s:weekend", "action": "panel:https://friday.ru/live"},
-        {"label": "Россия 24", "icon": "msx-white-s:fiber_manual_record", "action": "panel:https://smotrim.ru/live/5"}
+      "headline": "ТВ Каналы",
+      "items": [
+        {"label": "Первый канал", "image": "https://logo.clearbit.com/1tv.ru", "color": "#003087", "action": "panel:https://www.1tv.ru/live"},
+        {"label": "Россия 1", "image": "https://logo.clearbit.com/russia.tv", "color": "#C8102E", "action": "panel:https://smotrim.ru/live/4"},
+        {"label": "НТВ", "image": "https://logo.clearbit.com/ntv.ru", "color": "#007A33", "action": "panel:https://www.ntv.ru/tv/efir/"},
+        {"label": "Матч ТВ", "image": "https://logo.clearbit.com/matchtv.ru", "color": "#FF6B00", "action": "panel:https://matchtv.ru/on-air"},
+        {"label": "ТНТ", "image": "https://logo.clearbit.com/tnt-online.ru", "color": "#CC0000", "action": "panel:https://www.tnt-online.ru/live/"},
+        {"label": "СТС", "image": "https://logo.clearbit.com/ctc.ru", "color": "#FF5A00", "action": "panel:https://ctc.ru/"},
+        {"label": "РЕН ТВ", "image": "https://logo.clearbit.com/ren.tv", "color": "#8B0000", "action": "panel:https://ren.tv/live"},
+        {"label": "Пятница", "image": "https://logo.clearbit.com/friday.ru", "color": "#FF4F00", "action": "panel:https://friday.ru/live"},
+        {"label": "Россия 24", "image": "https://logo.clearbit.com/russia.tv", "color": "#1A3A6C", "action": "panel:https://smotrim.ru/live/5"},
+        {"label": "Пятый канал", "image": "https://logo.clearbit.com/5-tv.ru", "color": "#0056A2", "action": "panel:https://www.5-tv.ru/online/"}
       ]
     },
     {
-      "label": "Детям",
-      "icon": "msx-white-s:smart_toy",
-      "image": "https://evgeniy9607.github.io/msx/gradient.svg",
-      "options": [
-        {"label": "YouTube Kids", "icon": "msx-white-s:child_care", "action": "panel:https://www.youtubekids.com"},
-        {"label": "IVI Детям", "icon": "msx-white-s:play_circle", "action": "panel:https://www.ivi.ru/kids"},
-        {"label": "Мульт", "icon": "msx-white-s:live_tv", "action": "panel:https://mult.ru/online"},
-        {"label": "Карусель", "icon": "msx-white-s:live_tv", "action": "panel:https://karusel.tv/air"}
+      "headline": "Детям",
+      "items": [
+        {"label": "YouTube Kids", "image": "https://logo.clearbit.com/youtube.com", "color": "#FF0000", "action": "panel:https://www.youtubekids.com"},
+        {"label": "IVI Детям", "image": "https://logo.clearbit.com/ivi.ru", "color": "#00A8E0", "action": "panel:https://www.ivi.ru/kids"},
+        {"label": "Мульт", "image": "https://logo.clearbit.com/mult.ru", "color": "#F5A623", "action": "panel:https://mult.ru/online"},
+        {"label": "Карусель", "image": "https://logo.clearbit.com/karusel.tv", "color": "#FF7F00", "action": "panel:https://karusel.tv/air"}
       ]
     }
   ]
