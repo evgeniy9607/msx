@@ -3,17 +3,9 @@
   "headline": "Smart TV Портал",
   "background": "#1A1A1A",
   "template": {
-<<<<<<< HEAD
-    "layout": "0,0,3,4",
-    "color": "msx-glass",
-    "imageFiller": "width-center",
-    "imageWidth": 2,
-    "imageHeight": 2
-=======
     "type": "separate",
     "layout": "0,0,1,2",
     "color": "msx-glass"
->>>>>>> 4bf7037bd4dbac58eaca21efc75b05f97a523fb0
   },
   "items": [
     {
