@@ -5,12 +5,12 @@
   "menu": [
     {
       "icon": "movie",
-      "label": "Стриминг",
+      "label": "Онлайн-кинотеатры",
       "data": "https://evgeniy9607.github.io/msx/streaming.json"
     },
     {
       "icon": "play-circle-outline",
-      "label": "Бесплатно",
+      "label": "Открытые сервисы",
       "data": "https://evgeniy9607.github.io/msx/free.json"
     },
     {
