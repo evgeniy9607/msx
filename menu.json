@@ -128,11 +128,18 @@
             "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
           },
           {
-            "label": "Zona",
+            "label": "Filmix",
             "sublabel": "Фильмы и сериалы",
-            "image": "https://logo.clearbit.com/zona.mobi",
-            "color": "#00C853",
-            "action": "link:http://zona.mobi"
+            "image": "https://logo.clearbit.com/filmix.tv",
+            "color": "#1A1A2E",
+            "action": "link:http://filmix.tv/"
+          },
+          {
+            "label": "TuTkino",
+            "sublabel": "Онлайн кинотеатр",
+            "image": "https://logo.clearbit.com/tutkino.fun",
+            "color": "#4A148C",
+            "action": "link:http://web.tutkino.fun/"
           },
           {
             "label": "Atodo",
