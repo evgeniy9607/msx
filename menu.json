@@ -125,7 +125,7 @@
             "sublabel": "Видео и клипы",
             "image": "https://logo.clearbit.com/vkvideo.ru",
             "color": "#0077FF",
-            "action": "link:http://vkvideo.ru"
+            "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
           },
           {
             "label": "Zona",
