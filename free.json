@@ -4,7 +4,7 @@
   "headline": "Бесплатный контент",
   "template": {
     "type": "separate",
-    "layout": "0,0,2,2",
+    "layout": "0,0,2,3",
     "color": "msx-glass"
   },
   "items": [
