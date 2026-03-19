@@ -4,11 +4,8 @@
   "headline": "Стриминговые сервисы",
   "template": {
     "type": "separate",
-    "layout": "0,0,3,2",
-    "color": "msx-glass",
-    "imageFiller": "width-center",
-    "imageWidth": 2,
-    "imageHeight": 1.2
+    "layout": "0,0,2,3",
+    "color": "msx-glass"
   },
   "items": [
     {
