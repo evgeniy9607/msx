@@ -134,14 +134,7 @@
             "color": "#1A1A2E",
             "action": "link:http://filmix.tv/"
           },
-          {
-            "label": "TuTkino",
-            "sublabel": "Онлайн кинотеатр",
-            "image": "https://logo.clearbit.com/tutkino.fun",
-            "color": "#4A148C",
-            "action": "link:http://web.tutkino.fun/"
-          },
-          {
+{
             "label": "Atodo",
             "sublabel": "Бесплатные фильмы",
             "image": "https://logo.clearbit.com/atodo.ru",
