@@ -1,27 +1,5 @@
 {
-  "headline": "Smart TV Портал",
-  "transparent": 2,
-  "background": "https://evgeniy9607.github.io/msx/background.png",
-  "menu": [
-    {
-      "icon": "movie",
-      "label": "Онлайн-кинотеатры",
-      "data": "https://evgeniy9607.github.io/msx/streaming.json"
-    },
-    {
-      "icon": "play-circle-outline",
-      "label": "Открытые сервисы",
-      "data": "https://evgeniy9607.github.io/msx/free.json"
-    },
-    {
-      "icon": "live-tv",
-      "label": "ТВ Каналы",
-      "data": "https://evgeniy9607.github.io/msx/tv.json"
-    },
-    {
-      "icon": "child-care",
-      "label": "Детям",
-      "data": "https://evgeniy9607.github.io/msx/kids.json"
-    }
-  ]
+  "name": "XXI VEK Smart TV",
+  "version": "1.0.0",
+  "parameter": "menu:https://evgeniy9607.github.io/msx/menu.json"
 }
