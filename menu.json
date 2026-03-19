@@ -1,27 +1,27 @@
 {
   "headline": "Smart TV Портал",
   "transparent": 2,
-  "background": "https://evgeniy9607.github.io/msx/background.png",
+  "background": "https://raw.githubusercontent.com/evgeniy9607/msx/main/background.png",
   "menu": [
     {
       "icon": "movie",
       "label": "Онлайн-кинотеатры",
-      "data": "https://evgeniy9607.github.io/msx/streaming.json"
+      "data": "https://raw.githubusercontent.com/evgeniy9607/msx/main/streaming.json"
     },
     {
       "icon": "play-circle-outline",
       "label": "Открытые сервисы",
-      "data": "https://evgeniy9607.github.io/msx/free.json"
+      "data": "https://raw.githubusercontent.com/evgeniy9607/msx/main/free.json"
     },
     {
       "icon": "live-tv",
       "label": "ТВ Каналы",
-      "data": "https://evgeniy9607.github.io/msx/tv.json"
+      "data": "https://raw.githubusercontent.com/evgeniy9607/msx/main/tv.json"
     },
     {
       "icon": "child-care",
       "label": "Детям",
-      "data": "https://evgeniy9607.github.io/msx/kids.json"
+      "data": "https://raw.githubusercontent.com/evgeniy9607/msx/main/kids.json"
     }
   ]
 }
