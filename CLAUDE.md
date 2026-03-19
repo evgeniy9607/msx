@@ -4,30 +4,50 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Media Station X (MSX)** portal — a Smart TV launcher interface built entirely with JSON configuration files. MSX is a media app platform for Smart TVs and set-top boxes that renders UI from JSON descriptors. There is no build step, no dependencies, and no source code — just JSON files served to the MSX app.
+Media Station X (MSX) Smart TV portal — a launcher interface built entirely with static JSON files. No build step, no dependencies, no source code. Files are served via GitHub Pages at `evgeniy9607.github.io/msx/`.
 
 ## Architecture
 
-- **start.json** — Main entry point. Single-page layout using absolute positioning (`layout: "col,row,width,height"`). Contains all service cards organized under section headers (Стриминг, Бесплатно, ТВ Каналы, Детям). Uses `type: "list"` with manual grid coordinates.
-- **streaming.json** — Streaming services sub-page (Кинопоиск, IVI, Okko, etc.). Uses `template` with `type: "separate"` for uniform card layout.
-- **free.json** — Free content sub-page (YouTube, RuTube, Смотрим, etc.)
-- **tv.json** — TV channels sub-page (Первый канал, Россия 1, НТВ, etc.)
-- **kids.json** — Kids content sub-page (YouTube Kids, IVI Детям, Мульт, etc.)
+**DO NOT modify the architecture.** Only change content within the existing structure.
 
-## MSX JSON Format
+**Sidebar menu + content pattern:**
 
-Each file follows the MSX content format:
-- `type`: layout type (`"list"` for grid layouts)
-- `headline`: page title
-- `template`: default item properties (used in sub-pages)
-- `items[]`: array of service cards with `label`, `sublabel`, `image`, `color`, `action`
-- `layout`: absolute grid position as `"col,row,width,height"` (12-column grid, used in start.json)
-- `action`: typically `"panel:URL"` to open a service link
-- `image`: service logos via clearbit API (`https://logo.clearbit.com/domain`)
+- **start.json** — Menu Root Object. Renders a sidebar on the left with 4 categories. Each menu item's `data` points to a content JSON file. Uses custom background image (`background.png`) and `transparent: 2`.
+- **streaming.json** — Онлайн-кинотеатры (Кинопоиск, IVI, Okko, etc.)
+- **free.json** — Открытые сервисы (YouTube, RuTube, Смотрим, etc.)
+- **tv.json** — ТВ Каналы (Первый канал, Россия 1, НТВ, etc.)
+- **kids.json** — Детям (YouTube Kids, IVI Детям, Мульт, etc.)
+
+Content files use Content Root Object format: `type: "list"`, `compress: true`, template `layout: "0,0,2,2"` (6 tiles per row).
+
+## Start URL
+
+```
+https://msx.benzac.de/index.html?start=menu:https://evgeniy9607.github.io/msx/start.json
+```
+
+Note: prefix is `menu:` (not `content:`). This is what enables the sidebar layout.
+
+## Deployment
+
+Static files hosted on GitHub Pages from the `main` branch. Push to `main` → wait ~1 minute → changes live. No build process.
+
+## MSX JSON Reference
+
+**Menu Root Object** (start.json):
+- `menu[]` — array of menu items with `label`, `icon`, `data` (URL to content JSON)
+- `headline`, `background`, `transparent`, `style` — visual properties
+
+**Content Root Object** (streaming.json, etc.):
+- `type: "list"` with `template` and `items[]` — templated tile grid
+- `template.layout: "col,row,width,height"` — 12-column grid system
+- `compress: true` — reduces vertical gaps between tiles
+- Item properties: `label`, `sublabel`, `image`, `color`, `action`
+- `action: "panel:URL"` — opens a service link
 
 ## Conventions
 
-- All UI text is in Russian
-- Section headers in start.json use items with only `label` and `color` (no action/image) and span full width (`12,1`)
-- Service cards are 3x4 grid units in start.json, 4x4 in sub-pages
+- All UI text in Russian
+- Service logos via Clearbit: `https://logo.clearbit.com/{domain}`
 - Colors are brand-specific hex values per service
+- MSX icon names follow Material Design (e.g., `movie`, `live-tv`, `child-care`)

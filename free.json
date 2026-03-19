@@ -30,18 +30,25 @@
       "action": "panel:https://smotrim.ru"
     },
     {
-      "label": "ВКонтакте Видео",
+      "label": "VK Видео",
       "sublabel": "Видео и клипы",
-      "image": "https://logo.clearbit.com/vk.com",
+      "image": "https://logo.clearbit.com/vkvideo.ru",
       "color": "#0077FF",
-      "action": "panel:https://vk.com/video"
+      "action": "panel:https://vkvideo.ru"
     },
     {
-      "label": "Одноклассники",
-      "sublabel": "Видео и трансляции",
-      "image": "https://logo.clearbit.com/ok.ru",
-      "color": "#EE8208",
-      "action": "panel:https://ok.ru/video"
+      "label": "Zona",
+      "sublabel": "Фильмы и сериалы",
+      "image": "https://logo.clearbit.com/zona.mobi",
+      "color": "#00C853",
+      "action": "panel:https://zona.mobi"
+    },
+    {
+      "label": "Atodo",
+      "sublabel": "Бесплатные фильмы",
+      "image": "https://logo.clearbit.com/atodo.ru",
+      "color": "#6200EA",
+      "action": "panel:https://atodo.ru"
     }
   ]
 }
