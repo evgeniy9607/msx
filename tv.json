@@ -4,7 +4,7 @@
   "headline": "ТВ Каналы",
   "template": {
     "type": "default",
-    "layout": "0,0,12,2",
+    "layout": "0,0,6,1",
     "color": "msx-glass",
     "imageFiller": "height-left"
   },
