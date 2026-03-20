@@ -29,13 +29,6 @@
             "action": "link:https://lg.ivi.ru/"
           },
           {
-            "label": "Okko",
-            "sublabel": "Фильмы, сериалы, спорт",
-            "image": "https://logo.clearbit.com/okko.tv",
-            "color": "#222222",
-            "action": "link:https://lge.okko.tv"
-          },
-          {
             "label": "Premier",
             "sublabel": "Сериалы и шоу",
             "image": "https://logo.clearbit.com/premier.one",
