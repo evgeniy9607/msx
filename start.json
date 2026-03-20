@@ -1,5 +1,6 @@
 {
   "name": "XXI VEK Smart TV",
   "version": "1.0.0",
-  "parameter": "menu: https://evgeniy9607.github.io/msx/menu.json"
+  "dictionary": "https://wals09.github.io/msx/dictionary.json",
+  "parameter": "menu:https://evgeniy9607.github.io/msx/menu.json"
 }

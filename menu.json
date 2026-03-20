@@ -132,7 +132,7 @@
             "sublabel": "Фильмы, сериалы, аниме",
             "image": "https://logo.clearbit.com/atodo.fun",
             "color": "#6200EA",
-            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
+            "action": "link:http://msx.atodo.fun/"
           }
         ]
       }
