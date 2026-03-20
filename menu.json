@@ -158,88 +158,39 @@
         },
         "items": [
           {
-            "label": "Первый канал",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/1tv.ru",
-            "color": "#003087",
-            "action": "link:http://www.1tv.ru/live"
+            "label": "Яндекс Эфир",
+            "sublabel": "ТВ каналы онлайн",
+            "image": "https://logo.clearbit.com/yandex.ru",
+            "color": "#FFCC00",
+            "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
           },
           {
-            "label": "Россия 1",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/russia.tv",
+            "label": "Смотрим",
+            "sublabel": "Каналы ВГТРК",
+            "image": "https://logo.clearbit.com/smotrim.ru",
             "color": "#C8102E",
             "action": "link:https://tv.smotrim.ru"
           },
           {
-            "label": "НТВ",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/ntv.ru",
-            "color": "#007A33",
-            "action": "link:http://www.ntv.ru/tv/efir/"
+            "label": "OTT-Play",
+            "sublabel": "IPTV плеер",
+            "image": "https://logo.clearbit.com/ott-play.com",
+            "color": "#1565C0",
+            "action": "link:http://ott-play.com/f/"
           },
           {
-            "label": "Матч ТВ",
-            "sublabel": "Спорт",
-            "image": "https://logo.clearbit.com/matchtv.ru",
-            "color": "#FF6B00",
-            "action": "link:http://matchtv.ru/on-air"
+            "label": "DRM-Play",
+            "sublabel": "IPTV плеер",
+            "image": "https://logo.clearbit.com/drm-play.com",
+            "color": "#263238",
+            "action": "link:http://ott.drm-play.com"
           },
           {
-            "label": "Россия 24",
-            "sublabel": "Новости",
-            "image": "https://logo.clearbit.com/russia.tv",
-            "color": "#1A3A6C",
-            "action": "link:https://tv.smotrim.ru"
-          },
-          {
-            "label": "РЕН ТВ",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/ren.tv",
-            "color": "#880000",
-            "action": "link:http://ren.tv/live"
-          },
-          {
-            "label": "ТНТ",
-            "sublabel": "Развлечения",
-            "image": "https://logo.clearbit.com/tnt-online.ru",
-            "color": "#CC0000",
-            "action": "link:http://www.tnt-online.ru/live/"
-          },
-          {
-            "label": "СТС",
-            "sublabel": "Развлечения",
-            "image": "https://logo.clearbit.com/ctc.ru",
-            "color": "#FF5A00",
-            "action": "link:http://ctc.ru/"
-          },
-          {
-            "label": "Пятница",
-            "sublabel": "Развлечения",
-            "image": "https://logo.clearbit.com/friday.ru",
-            "color": "#FF4F00",
-            "action": "link:http://friday.ru/live"
-          },
-          {
-            "label": "ТВ-3",
-            "sublabel": "Мистика и фантастика",
-            "image": "https://logo.clearbit.com/tv3.ru",
-            "color": "#5B2D8E",
-            "action": "link:http://tv3.ru/"
-          },
-          {
-            "label": "Пятый канал",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/5-tv.ru",
-            "color": "#0056A2",
-            "action": "link:http://www.5-tv.ru/online/"
-          },
-          {
-            "label": "Звезда",
-            "sublabel": "Прямой эфир",
-            "image": "https://logo.clearbit.com/tvzvezda.ru",
-            "color": "#CC0000",
-            "action": "link:http://tvzvezda.ru/schedule/air/"
+            "label": "OTT-Player",
+            "sublabel": "Сборка плейлистов",
+            "image": "https://logo.clearbit.com/ottplayer.tv",
+            "color": "#4CAF50",
+            "action": "link:http://widget.ottplayer.tv"
           }
         ]
       }
