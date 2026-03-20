@@ -1,7 +1,6 @@
 {
   "type": "list",
   "compress": true,
-  "headline": "Бесплатный контент",
   "template": {
     "type": "separate",
     "layout": "0,0,2,3",
@@ -11,44 +10,44 @@
     {
       "label": "YouTube",
       "sublabel": "Видео на любой вкус",
-      "image": "https://logo.clearbit.com/youtube.com",
+      "image": "https://wals09.github.io/msx/logon/youtube.png",
       "color": "#FF0000",
-      "action": "panel:https://www.youtube.com"
+      "action": "link:https://www.youtube.com/tv#/"
     },
     {
       "label": "RuTube",
       "sublabel": "Российское видео",
-      "image": "https://logo.clearbit.com/rutube.ru",
+      "image": "https://wals09.github.io/msx/logon/rutube.png",
       "color": "#1A1ADB",
-      "action": "panel:https://rutube.ru"
+      "action": "link:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
     },
     {
       "label": "Смотрим",
       "sublabel": "ВГТРК онлайн",
-      "image": "https://logo.clearbit.com/smotrim.ru",
+      "image": "https://wals09.github.io/msx/logon/smotrim.png",
       "color": "#C8102E",
-      "action": "panel:https://smotrim.ru"
+      "action": "link:https://tv.smotrim.ru"
     },
     {
       "label": "VK Видео",
       "sublabel": "Видео и клипы",
-      "image": "https://logo.clearbit.com/vkvideo.ru",
+      "image": "https://wals09.github.io/msx/logon/vk.png",
       "color": "#0077FF",
-      "action": "panel:https://vkvideo.ru"
+      "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
     },
     {
-      "label": "Zona",
-      "sublabel": "Фильмы и сериалы",
-      "image": "https://logo.clearbit.com/zona.mobi",
-      "color": "#00C853",
-      "action": "panel:https://zona.mobi"
+      "label": "Яндекс Эфир",
+      "sublabel": "ТВ каналы онлайн",
+      "image": "https://wals09.github.io/msx/logon/yandex.png",
+      "color": "#FFCC00",
+      "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
     },
     {
       "label": "Atodo",
-      "sublabel": "Бесплатные фильмы",
-      "image": "https://logo.clearbit.com/atodo.ru",
+      "sublabel": "Фильмы, сериалы, аниме",
+      "image": "https://wals09.github.io/msx/logon/atodo.png",
       "color": "#6200EA",
-      "action": "panel:https://atodo.ru"
+      "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
     }
   ]
 }
