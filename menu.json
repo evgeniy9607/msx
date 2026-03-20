@@ -71,6 +71,13 @@
             "color": "#6B1FCD",
             "action": "link:https://kion.ru/EPG/smarttvlg/index.html"
           },
+          {
+            "label": "Wink",
+            "sublabel": "Ростелеком",
+            "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
+            "color": "#FF4B00",
+            "action": "link:http://wink.ru"
+          }
         ]
       }
     },
@@ -126,7 +133,7 @@
             "sublabel": "Фильмы, сериалы, аниме",
             "image": "https://wals09.github.io/msx/logon/atodo.png",
             "color": "#6200EA",
-            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
+            "action": "link:http://msx.atodo.fun/"
           }
         ]
       }
