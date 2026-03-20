@@ -121,6 +121,13 @@
             "color": "#FFCC00",
             "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
           },
+          {
+            "label": "Atodo",
+            "sublabel": "Фильмы, сериалы, аниме",
+            "image": "https://wals09.github.io/msx/logon/atodo.png",
+            "color": "#6200EA",
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
+          }
         ]
       }
     },
