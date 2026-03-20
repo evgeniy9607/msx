@@ -128,29 +128,6 @@
             "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
           },
           {
-            "label": "Atodo",
-            "sublabel": "Фильмы, сериалы, аниме",
-            "image": "https://logo.clearbit.com/atodo.fun",
-            "color": "#6200EA",
-            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
-          }
-        ]
-      }
-    },
-    {
-      "icon": "live-tv",
-      "label": "ТВ Каналы",
-      "data": {
-        "type": "list",
-        "compress": true,
-        "template": {
-          "type": "default",
-          "layout": "0,0,6,1",
-          "color": "msx-glass",
-          "imageFiller": "height-left"
-        },
-        "items": [
-          {
             "label": "Яндекс Эфир",
             "sublabel": "ТВ каналы онлайн",
             "image": "https://logo.clearbit.com/yandex.ru",
@@ -158,32 +135,11 @@
             "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
           },
           {
-            "label": "Смотрим",
-            "sublabel": "Каналы ВГТРК",
-            "image": "https://logo.clearbit.com/smotrim.ru",
-            "color": "#C8102E",
-            "action": "link:https://tv.smotrim.ru"
-          },
-          {
-            "label": "OTT-Play",
-            "sublabel": "IPTV плеер",
-            "image": "https://logo.clearbit.com/ott-play.com",
-            "color": "#1565C0",
-            "action": "link:http://ott-play.com/f/"
-          },
-          {
-            "label": "DRM-Play",
-            "sublabel": "IPTV плеер",
-            "image": "https://logo.clearbit.com/drm-play.com",
-            "color": "#263238",
-            "action": "link:http://ott.drm-play.com"
-          },
-          {
-            "label": "OTT-Player",
-            "sublabel": "Сборка плейлистов",
-            "image": "https://logo.clearbit.com/ottplayer.tv",
-            "color": "#4CAF50",
-            "action": "link:http://widget.ottplayer.tv"
+            "label": "Atodo",
+            "sublabel": "Фильмы, сериалы, аниме",
+            "image": "https://logo.clearbit.com/atodo.fun",
+            "color": "#6200EA",
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
           }
         ]
       }
