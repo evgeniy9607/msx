@@ -26,7 +26,7 @@
             "sublabel": "Фильмы и сериалы",
             "image": "https://logo.clearbit.com/ivi.ru",
             "color": "#00AACC",
-            "action": "link:http://www.ivi.ru"
+            "action": "link:https://lg.ivi.ru/"
           },
           {
             "label": "Okko",
@@ -169,7 +169,7 @@
             "sublabel": "Мультфильмы и сказки",
             "image": "https://logo.clearbit.com/ivi.ru",
             "color": "#00AACC",
-            "action": "link:http://www.ivi.ru/kids"
+            "action": "link:https://lg.ivi.ru/"
           },
           {
             "label": "Мульт",
