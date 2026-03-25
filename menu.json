@@ -21,6 +21,8 @@
             "sublabel": "Фильмы и сериалы",
             "image": "https://wals09.github.io/msx/logon/kinopoisk.png",
             "color": "#FF6400",
+            "badge": "TOP",
+            "badgeColor": "#E50000",
             "action": "link:https://smarttv-app.ott.yandex.ru/"
           },
           {
@@ -29,6 +31,15 @@
             "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
             "color": "#00AACC",
             "action": "link:https://lg.ivi.ru/"
+          },
+          {
+            "label": "Okko",
+            "sublabel": "Фильмы, сериалы, спорт",
+            "image": "https://www.google.com/s2/favicons?domain=okko.tv&sz=128",
+            "color": "#222222",
+            "tag": "NEW",
+            "tagColor": "#4CAF50",
+            "action": "link:https://okko.tv"
           },
           {
             "label": "Premier",
@@ -99,6 +110,8 @@
             "sublabel": "Видео на любой вкус",
             "image": "https://wals09.github.io/msx/logon/youtube.png",
             "color": "#FF0000",
+            "stamp": "FREE",
+            "stampColor": "#2196F3",
             "action": "link:https://www.youtube.com/tv#/"
           },
           {
@@ -135,6 +148,106 @@
             "image": "https://wals09.github.io/msx/logon/atodo.png",
             "color": "#6200EA",
             "action": "link:http://msx.atodo.fun/"
+          }
+        ]
+      }
+    },
+    {
+      "icon": "live-tv",
+      "label": "ТВ Каналы",
+      "data": {
+        "type": "list",
+        "compress": true,
+        "template": {
+          "type": "default",
+          "layout": "0,0,6,1",
+          "color": "msx-glass",
+          "imageFiller": "height-left"
+        },
+        "items": [
+          {
+            "label": "Первый канал",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/1tv.ru",
+            "color": "#003087",
+            "action": "link:https://www.1tv.ru/live"
+          },
+          {
+            "label": "Россия 1",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/russia.tv",
+            "color": "#C8102E",
+            "action": "link:https://smotrim.ru/live/4"
+          },
+          {
+            "label": "НТВ",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/ntv.ru",
+            "color": "#007A33",
+            "action": "link:https://www.ntv.ru/tv/efir/"
+          },
+          {
+            "label": "Матч ТВ",
+            "sublabel": "Спорт",
+            "image": "https://logo.clearbit.com/matchtv.ru",
+            "color": "#FF6B00",
+            "action": "link:https://matchtv.ru/on-air"
+          },
+          {
+            "label": "Россия 24",
+            "sublabel": "Новости",
+            "image": "https://logo.clearbit.com/russia.tv",
+            "color": "#1A3A6C",
+            "action": "link:https://smotrim.ru/live/5"
+          },
+          {
+            "label": "РЕН ТВ",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/ren.tv",
+            "color": "#880000",
+            "action": "link:https://ren.tv/live"
+          },
+          {
+            "label": "ТНТ",
+            "sublabel": "Развлечения",
+            "image": "https://logo.clearbit.com/tnt-online.ru",
+            "color": "#CC0000",
+            "action": "link:https://www.tnt-online.ru/live/"
+          },
+          {
+            "label": "СТС",
+            "sublabel": "Развлечения",
+            "image": "https://logo.clearbit.com/ctc.ru",
+            "color": "#FF5A00",
+            "action": "link:https://ctc.ru/"
+          },
+          {
+            "label": "Пятница",
+            "sublabel": "Развлечения",
+            "image": "https://logo.clearbit.com/friday.ru",
+            "color": "#FF4F00",
+            "action": "link:https://friday.ru/live"
+          },
+          {
+            "label": "ТВ-3",
+            "sublabel": "Мистика и фантастика",
+            "image": "https://logo.clearbit.com/tv3.ru",
+            "color": "#5B2D8E",
+            "action": "link:https://tv3.ru/"
+          },
+          {
+            "label": "Пятый канал",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/5-tv.ru",
+            "color": "#0056A2",
+            "action": "link:https://www.5-tv.ru/online/"
+          },
+          {
+            "label": "Звезда",
+            "sublabel": "Прямой эфир",
+            "image": "https://logo.clearbit.com/tvzvezda.ru",
+            "color": "#CC0000",
+            "action": "link:https://tvzvezda.ru/schedule/air/"
           }
         ]
       }
