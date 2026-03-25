@@ -147,7 +147,7 @@
             "sublabel": "Фильмы, сериалы, аниме",
             "image": "https://wals09.github.io/msx/logon/atodo.png",
             "color": "#6200EA",
-            "action": "link:http://msx.atodo.fun/"
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
           }
         ]
       }
@@ -170,84 +170,84 @@
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/1tv.ru",
             "color": "#003087",
-            "action": "link:https://www.1tv.ru/live"
+            "action": "video:http://dmi3y-tv6.ru/hls/DVB-T2/CH_1TV.m3u8"
           },
           {
             "label": "Россия 1",
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/russia.tv",
             "color": "#C8102E",
-            "action": "link:https://smotrim.ru/live/4"
+            "action": "video:https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8"
           },
           {
             "label": "НТВ",
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/ntv.ru",
             "color": "#007A33",
-            "action": "link:https://www.ntv.ru/tv/efir/"
+            "action": "video:https://cdn.ntv.ru/ntv0/playlist.m3u8"
           },
           {
             "label": "Матч ТВ",
             "sublabel": "Спорт",
             "image": "https://logo.clearbit.com/matchtv.ru",
             "color": "#FF6B00",
-            "action": "link:https://matchtv.ru/on-air"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8"
           },
           {
             "label": "Россия 24",
             "sublabel": "Новости",
             "image": "https://logo.clearbit.com/russia.tv",
             "color": "#1A3A6C",
-            "action": "link:https://smotrim.ru/live/5"
+            "action": "video:https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8"
           },
           {
             "label": "РЕН ТВ",
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/ren.tv",
             "color": "#880000",
-            "action": "link:https://ren.tv/live"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8"
           },
           {
             "label": "ТНТ",
             "sublabel": "Развлечения",
             "image": "https://logo.clearbit.com/tnt-online.ru",
             "color": "#CC0000",
-            "action": "link:https://www.tnt-online.ru/live/"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8"
           },
           {
             "label": "СТС",
             "sublabel": "Развлечения",
             "image": "https://logo.clearbit.com/ctc.ru",
             "color": "#FF5A00",
-            "action": "link:https://ctc.ru/"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8"
           },
           {
             "label": "Пятница",
             "sublabel": "Развлечения",
             "image": "https://logo.clearbit.com/friday.ru",
             "color": "#FF4F00",
-            "action": "link:https://friday.ru/live"
+            "action": "video:https://vod.tuva.ru/friday/index.m3u8"
           },
           {
             "label": "ТВ-3",
             "sublabel": "Мистика и фантастика",
             "image": "https://logo.clearbit.com/tv3.ru",
             "color": "#5B2D8E",
-            "action": "link:https://tv3.ru/"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8"
           },
           {
             "label": "Пятый канал",
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/5-tv.ru",
             "color": "#0056A2",
-            "action": "link:https://www.5-tv.ru/online/"
+            "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8"
           },
           {
             "label": "Звезда",
             "sublabel": "Прямой эфир",
             "image": "https://logo.clearbit.com/tvzvezda.ru",
             "color": "#CC0000",
-            "action": "link:https://tvzvezda.ru/schedule/air/"
+            "action": "video:https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8"
           }
         ]
       }
