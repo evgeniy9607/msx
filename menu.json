@@ -95,7 +95,7 @@
     },
     {
       "icon": "play-circle-outline",
-      "label": "Открытые сервисы",
+      "label": "Бесплатные сервисы",
       "data": {
         "type": "list",
         "compress": true,
@@ -106,13 +106,11 @@
         },
         "items": [
           {
-            "label": "YouTube",
-            "sublabel": "Видео на любой вкус",
-            "image": "https://wals09.github.io/msx/logon/youtube.png",
-            "color": "#FF0000",
-            "stamp": "FREE",
-            "stampColor": "#2196F3",
-            "action": "link:https://www.youtube.com/tv#/"
+            "label": "Atodo",
+            "sublabel": "Фильмы, сериалы, аниме",
+            "image": "https://wals09.github.io/msx/logon/atodo.png",
+            "color": "#6200EA",
+            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
           },
           {
             "label": "RuTube",
@@ -120,13 +118,6 @@
             "image": "https://wals09.github.io/msx/logon/rutube.png",
             "color": "#1A1ADB",
             "action": "link:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
-          },
-          {
-            "label": "Смотрим",
-            "sublabel": "ВГТРК онлайн",
-            "image": "https://wals09.github.io/msx/logon/smotrim.png",
-            "color": "#C8102E",
-            "action": "link:https://tv.smotrim.ru"
           },
           {
             "label": "VK Видео",
@@ -143,11 +134,18 @@
             "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
           },
           {
-            "label": "Atodo",
-            "sublabel": "Фильмы, сериалы, аниме",
-            "image": "https://wals09.github.io/msx/logon/atodo.png",
-            "color": "#6200EA",
-            "action": "menu:request:interaction:menu@http://atodo.fun/fun.html"
+            "label": "Смотрим",
+            "sublabel": "ВГТРК онлайн",
+            "image": "https://wals09.github.io/msx/logon/smotrim.png",
+            "color": "#C8102E",
+            "action": "link:https://tv.smotrim.ru"
+          },
+          {
+            "label": "YouTube",
+            "sublabel": "Видео на любой вкус",
+            "image": "https://wals09.github.io/msx/logon/youtube.png",
+            "color": "#FF0000",
+            "action": "link:https://www.youtube.com/tv#/"
           }
         ]
       }
