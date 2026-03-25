@@ -21,63 +21,63 @@
             "sublabel": "Фильмы и сериалы",
             "image": "https://wals09.github.io/msx/logon/kinopoisk.png",
             "color": "#FF6400",
-            "action": "link:window:https://smarttv-app.ott.yandex.ru/"
+            "action": "link:https://smarttv-app.ott.yandex.ru/"
           },
           {
             "label": "IVI",
             "sublabel": "Фильмы и сериалы",
             "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
             "color": "#00AACC",
-            "action": "link:window:https://lg.ivi.ru/"
+            "action": "link:https://lg.ivi.ru/"
           },
           {
             "label": "Premier",
             "sublabel": "Сериалы и шоу",
             "image": "https://www.google.com/s2/favicons?domain=premier.one&sz=128",
             "color": "#0A0A1A",
-            "action": "link:window:http://premier.one"
+            "action": "link:http://premier.one"
           },
           {
             "label": "START",
             "sublabel": "Оригинальные сериалы",
             "image": "https://www.google.com/s2/favicons?domain=start.ru&sz=128",
             "color": "#1C1C1C",
-            "action": "link:window:http://start.ru"
+            "action": "link:http://start.ru"
           },
           {
             "label": "Megogo",
             "sublabel": "Фильмы, ТВ, спорт",
             "image": "https://www.google.com/s2/favicons?domain=megogo.net&sz=128",
             "color": "#009DE0",
-            "action": "link:window:http://megogo.net"
+            "action": "link:http://megogo.net"
           },
           {
             "label": "Амедиатека",
             "sublabel": "HBO и мировые хиты",
             "image": "https://www.google.com/s2/favicons?domain=amediateka.ru&sz=128",
             "color": "#2B2B2B",
-            "action": "link:window:http://www.amediateka.ru"
+            "action": "link:http://www.amediateka.ru"
           },
           {
             "label": "More.tv",
             "sublabel": "Стриминг НМГ",
             "image": "https://www.google.com/s2/favicons?domain=more.tv&sz=128",
             "color": "#00A3E0",
-            "action": "link:window:http://more.tv"
+            "action": "link:http://more.tv"
           },
           {
             "label": "Kion",
             "sublabel": "МТС стриминг",
             "image": "https://wals09.github.io/msx/logon/kion.png",
             "color": "#6B1FCD",
-            "action": "link:window:https://kion.ru/EPG/smarttvlg/index.html"
+            "action": "link:https://kion.ru/EPG/smarttvlg/index.html"
           },
           {
             "label": "Wink",
             "sublabel": "Ростелеком",
             "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
             "color": "#FF4B00",
-            "action": "link:window:http://wink.ru"
+            "action": "link:http://wink.ru"
           }
         ]
       }
@@ -99,42 +99,42 @@
             "sublabel": "Видео на любой вкус",
             "image": "https://wals09.github.io/msx/logon/youtube.png",
             "color": "#FF0000",
-            "action": "link:window:https://www.youtube.com/tv#/"
+            "action": "link:https://www.youtube.com/tv#/"
           },
           {
             "label": "RuTube",
             "sublabel": "Российское видео",
             "image": "https://wals09.github.io/msx/logon/rutube.png",
             "color": "#1A1ADB",
-            "action": "link:window:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
+            "action": "link:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
           },
           {
             "label": "Смотрим",
             "sublabel": "ВГТРК онлайн",
             "image": "https://wals09.github.io/msx/logon/smotrim.png",
             "color": "#C8102E",
-            "action": "link:window:https://tv.smotrim.ru"
+            "action": "link:https://tv.smotrim.ru"
           },
           {
             "label": "VK Видео",
             "sublabel": "Видео и клипы",
             "image": "https://wals09.github.io/msx/logon/vk.png",
             "color": "#0077FF",
-            "action": "link:window:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
+            "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
           },
           {
             "label": "Яндекс Эфир",
             "sublabel": "ТВ каналы онлайн",
             "image": "https://wals09.github.io/msx/logon/yandex.png",
             "color": "#FFCC00",
-            "action": "link:window:https://yandex.ru/video/tvapp/?ui=tvapp"
+            "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
           },
           {
             "label": "Atodo",
             "sublabel": "Фильмы, сериалы, аниме",
             "image": "https://wals09.github.io/msx/logon/atodo.png",
             "color": "#6200EA",
-            "action": "link:window:http://msx.atodo.fun/"
+            "action": "link:http://msx.atodo.fun/"
           }
         ]
       }
@@ -157,35 +157,35 @@
             "sublabel": "Безопасное видео для детей",
             "image": "https://wals09.github.io/msx/logon/youtube.png",
             "color": "#FF0000",
-            "action": "link:window:https://www.youtube.com/tv/kids"
+            "action": "link:https://www.youtube.com/tv/kids"
           },
           {
             "label": "IVI Детям",
             "sublabel": "Мультфильмы и сказки",
             "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
             "color": "#00AACC",
-            "action": "link:window:https://lg.ivi.ru/"
+            "action": "link:https://lg.ivi.ru/"
           },
           {
             "label": "Мульт",
             "sublabel": "Телеканал мультфильмов",
             "image": "https://wals09.github.io/msx/logon/multiki.png",
             "color": "#F5A623",
-            "action": "link:window:http://mult.ru/online"
+            "action": "link:http://mult.ru/online"
           },
           {
             "label": "Карусель",
             "sublabel": "Детский телеканал",
             "image": "https://www.google.com/s2/favicons?domain=karusel.tv&sz=128",
             "color": "#FF7F00",
-            "action": "link:window:http://karusel.tv/air"
+            "action": "link:http://karusel.tv/air"
           },
           {
             "label": "Мульт Россия",
             "sublabel": "Советские мультфильмы",
             "image": "https://wals09.github.io/msx/logon/smotrim.png",
             "color": "#E8192C",
-            "action": "link:window:https://tv.smotrim.ru"
+            "action": "link:https://tv.smotrim.ru"
           }
         ]
       }
