@@ -253,6 +253,57 @@
       }
     },
     {
+      "icon": "settings-input-antenna",
+      "label": "IPTV",
+      "data": {
+        "type": "list",
+        "compress": true,
+        "template": {
+          "type": "default",
+          "layout": "0,0,6,1",
+          "color": "msx-glass",
+          "imageFiller": "height-left"
+        },
+        "items": [
+          {
+            "label": "OTT-Play",
+            "sublabel": "IPTV плеер",
+            "image": "https://www.google.com/s2/favicons?domain=ott-play.com&sz=128",
+            "color": "#1565C0",
+            "action": "link:http://ott-play.com/f/"
+          },
+          {
+            "label": "DRM-Play",
+            "sublabel": "IPTV плеер с DRM",
+            "image": "https://www.google.com/s2/favicons?domain=drm-play.com&sz=128",
+            "color": "#263238",
+            "action": "link:http://ott.drm-play.com"
+          },
+          {
+            "label": "OTT-Player",
+            "sublabel": "Сборка плейлистов",
+            "image": "https://www.google.com/s2/favicons?domain=ottplayer.tv&sz=128",
+            "color": "#4CAF50",
+            "action": "link:http://widget.ottplayer.tv"
+          },
+          {
+            "label": "Lampa",
+            "sublabel": "Каталог фильмов и сериалов",
+            "image": "https://www.google.com/s2/favicons?domain=lampa.stream&sz=128",
+            "color": "#E65100",
+            "action": "link:http://lampa.stream"
+          },
+          {
+            "label": "Filmix",
+            "sublabel": "Фильмы и сериалы",
+            "image": "https://www.google.com/s2/favicons?domain=filmix.tv&sz=128",
+            "color": "#1A1A2E",
+            "action": "link:http://filmix.tv/"
+          }
+        ]
+      }
+    },
+    {
       "icon": "child-care",
       "label": "Детям",
       "data": {
