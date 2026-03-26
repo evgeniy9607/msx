@@ -1,0 +1,34 @@
+{
+  "type": "list",
+  "compress": true,
+  "headline": "Детские каналы",
+  "template": {
+    "type": "default",
+    "layout": "0,0,6,1",
+    "color": "msx-glass",
+    "imageFiller": "height-left"
+  },
+  "items": [
+    {
+      "label": "Карусель",
+      "sublabel": "Детский телеканал",
+      "image": "https://www.google.com/s2/favicons?domain=karusel.tv&sz=128",
+      "color": "#FF7F00",
+      "action": "link:http://karusel.tv/air"
+    },
+    {
+      "label": "Мульт",
+      "sublabel": "Телеканал мультфильмов",
+      "image": "https://wals09.github.io/msx/logon/multiki.png",
+      "color": "#F5A623",
+      "action": "link:http://mult.ru/online"
+    },
+    {
+      "label": "Мульт Россия",
+      "sublabel": "Советские мультфильмы",
+      "image": "https://wals09.github.io/msx/logon/smotrim.png",
+      "color": "#E8192C",
+      "action": "link:https://tv.smotrim.ru"
+    }
+  ]
+}
