@@ -6,92 +6,43 @@
     "type": "default",
     "layout": "0,0,6,1",
     "color": "msx-glass",
-    "imageFiller": "height-left"
+    "icon": "chevron-right"
   },
   "items": [
     {
-      "label": "Первый канал",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/1tv.ru",
-      "color": "#003087",
-      "action": "panel:https://www.1tv.ru/live"
+      "label": "Федеральные",
+      "sublabel": "Первый, Россия 1, НТВ, РЕН ТВ...",
+      "icon": "tv",
+      "color": "#1565C0",
+      "action": "content:https://evgeniy9607.github.io/msx/tv-federal.json"
     },
     {
-      "label": "Россия 1",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/russia.tv",
-      "color": "#C8102E",
-      "action": "panel:https://smotrim.ru/live/4"
+      "label": "Новости",
+      "sublabel": "Россия 24, Первый, НТВ",
+      "icon": "public",
+      "color": "#B71C1C",
+      "action": "content:https://evgeniy9607.github.io/msx/tv-news.json"
     },
     {
-      "label": "НТВ",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/ntv.ru",
-      "color": "#007A33",
-      "action": "panel:https://www.ntv.ru/tv/efir/"
+      "label": "Развлекательные",
+      "sublabel": "ТНТ, СТС, Пятница, ТВ-3",
+      "icon": "mood",
+      "color": "#FF6F00",
+      "action": "content:https://evgeniy9607.github.io/msx/tv-entertainment.json"
     },
     {
-      "label": "Матч ТВ",
-      "sublabel": "Спорт",
-      "image": "https://logo.clearbit.com/matchtv.ru",
-      "color": "#FF6B00",
-      "action": "panel:https://matchtv.ru/on-air"
+      "label": "Детские",
+      "sublabel": "Карусель, Мульт",
+      "icon": "child-care",
+      "color": "#4CAF50",
+      "action": "content:https://evgeniy9607.github.io/msx/tv-kids.json"
     },
     {
-      "label": "Россия 24",
-      "sublabel": "Новости",
-      "image": "https://logo.clearbit.com/russia.tv",
-      "color": "#1A3A6C",
-      "action": "panel:https://smotrim.ru/live/5"
-    },
-    {
-      "label": "РЕН ТВ",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/ren.tv",
-      "color": "#880000",
-      "action": "panel:https://ren.tv/live"
-    },
-    {
-      "label": "ТНТ",
-      "sublabel": "Развлечения",
-      "image": "https://logo.clearbit.com/tnt-online.ru",
-      "color": "#CC0000",
-      "action": "panel:https://www.tnt-online.ru/live/"
-    },
-    {
-      "label": "СТС",
-      "sublabel": "Развлечения",
-      "image": "https://logo.clearbit.com/ctc.ru",
-      "color": "#FF5A00",
-      "action": "panel:https://ctc.ru/"
-    },
-    {
-      "label": "Пятница",
-      "sublabel": "Развлечения",
-      "image": "https://logo.clearbit.com/friday.ru",
-      "color": "#FF4F00",
-      "action": "panel:https://friday.ru/live"
-    },
-    {
-      "label": "ТВ-3",
-      "sublabel": "Мистика и фантастика",
-      "image": "https://logo.clearbit.com/tv3.ru",
-      "color": "#5B2D8E",
-      "action": "panel:https://tv3.ru/"
-    },
-    {
-      "label": "Пятый канал",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/5-tv.ru",
-      "color": "#0056A2",
-      "action": "panel:https://www.5-tv.ru/online/"
-    },
-    {
-      "label": "Звезда",
-      "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/tvzvezda.ru",
-      "color": "#CC0000",
-      "action": "panel:https://tvzvezda.ru/schedule/air/"
+      "label": "Спорт",
+      "sublabel": "Матч ТВ",
+      "icon": "fitness-center",
+      "color": "#E65100",
+      "action": "content:https://evgeniy9607.github.io/msx/tv-sport.json"
     }
   ]
 }

@@ -1,0 +1,41 @@
+{
+  "type": "list",
+  "compress": true,
+  "headline": "Развлекательные",
+  "template": {
+    "type": "default",
+    "layout": "0,0,6,1",
+    "color": "msx-glass",
+    "imageFiller": "height-left"
+  },
+  "items": [
+    {
+      "label": "ТНТ",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/tnt-online.ru",
+      "color": "#CC0000",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8"
+    },
+    {
+      "label": "СТС",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/ctc.ru",
+      "color": "#FF5A00",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8"
+    },
+    {
+      "label": "Пятница",
+      "sublabel": "Развлечения",
+      "image": "https://logo.clearbit.com/friday.ru",
+      "color": "#FF4F00",
+      "action": "video:https://vod.tuva.ru/friday/index.m3u8"
+    },
+    {
+      "label": "ТВ-3",
+      "sublabel": "Мистика и фантастика",
+      "image": "https://logo.clearbit.com/tv3.ru",
+      "color": "#5B2D8E",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8"
+    }
+  ]
+}
