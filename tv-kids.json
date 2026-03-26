@@ -11,24 +11,17 @@
   "items": [
     {
       "label": "Карусель",
-      "sublabel": "Детский телеканал",
+      "sublabel": "Прямой эфир",
       "image": "https://www.google.com/s2/favicons?domain=karusel.tv&sz=128",
       "color": "#FF7F00",
-      "action": "link:http://karusel.tv/air"
+      "action": "video:https://streaming102.interskytech.com/live/232.m3u8"
     },
     {
       "label": "Мульт",
-      "sublabel": "Телеканал мультфильмов",
+      "sublabel": "Прямой эфир",
       "image": "https://wals09.github.io/msx/logon/multiki.png",
       "color": "#F5A623",
-      "action": "link:http://mult.ru/online"
-    },
-    {
-      "label": "Мульт Россия",
-      "sublabel": "Советские мультфильмы",
-      "image": "https://wals09.github.io/msx/logon/smotrim.png",
-      "color": "#E8192C",
-      "action": "link:https://tv.smotrim.ru"
+      "action": "video:http://31.148.48.15/Mult/index.m3u8"
     }
   ]
 }
