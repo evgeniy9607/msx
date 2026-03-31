@@ -81,7 +81,7 @@
             "sublabel": "Ростелеком",
             "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
             "color": "#FF4B00",
-            "action": "panel:https://wink.ru"
+            "action": "link:https://wink.ru"
           }
         ]
       }
