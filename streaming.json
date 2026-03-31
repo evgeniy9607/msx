@@ -58,13 +58,6 @@
       "action": "panel:https://www.amediateka.ru"
     },
     {
-      "label": "More.tv",
-      "sublabel": "Стриминг НМГ",
-      "image": "https://www.google.com/s2/favicons?domain=more.tv&sz=128",
-      "color": "#00A3E0",
-      "action": "panel:https://more.tv"
-    },
-    {
       "label": "Kion",
       "sublabel": "МТС стриминг",
       "image": "https://www.google.com/s2/favicons?domain=kion.ru&sz=128",

@@ -38,20 +38,6 @@
       "action": "video:https://cdn.ntv.ru/ntv0/playlist.m3u8"
     },
     {
-      "label": "Пятый канал",
-      "sublabel": "Прямой эфир",
-      "image": "https://www.google.com/s2/favicons?domain=5-tv.ru&sz=128",
-      "color": "#0056A2",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8"
-    },
-    {
-      "label": "РЕН ТВ",
-      "sublabel": "Прямой эфир",
-      "image": "https://www.google.com/s2/favicons?domain=ren.tv&sz=128",
-      "color": "#880000",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8"
-    },
-    {
       "label": "Звезда",
       "sublabel": "Прямой эфир",
       "image": "https://www.google.com/s2/favicons?domain=tvzvezda.ru&sz=128",
@@ -59,39 +45,11 @@
       "action": "video:https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8"
     },
     {
-      "label": "ТНТ",
-      "sublabel": "Развлечения",
-      "image": "https://www.google.com/s2/favicons?domain=tnt-online.ru&sz=128",
-      "color": "#CC0000",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8"
-    },
-    {
-      "label": "СТС",
-      "sublabel": "Развлечения",
-      "image": "https://www.google.com/s2/favicons?domain=ctc.ru&sz=128",
-      "color": "#FF5A00",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8"
-    },
-    {
       "label": "Пятница",
       "sublabel": "Развлечения",
       "image": "https://www.google.com/s2/favicons?domain=friday.ru&sz=128",
       "color": "#FF4F00",
       "action": "video:https://vod.tuva.ru/friday/index.m3u8"
-    },
-    {
-      "label": "ТВ-3",
-      "sublabel": "Мистика и фантастика",
-      "image": "https://www.google.com/s2/favicons?domain=tv3.ru&sz=128",
-      "color": "#5B2D8E",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8"
-    },
-    {
-      "label": "Матч ТВ",
-      "sublabel": "Спорт в прямом эфире",
-      "image": "https://www.google.com/s2/favicons?domain=matchtv.ru&sz=128",
-      "color": "#FF6B00",
-      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8"
     },
     {
       "label": "Мульт",
