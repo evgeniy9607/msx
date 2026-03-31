@@ -6,43 +6,99 @@
     "type": "default",
     "layout": "0,0,6,1",
     "color": "msx-glass",
-    "icon": "chevron-right"
+    "imageFiller": "height-left"
   },
   "items": [
     {
-      "label": "Федеральные",
-      "sublabel": "Первый, Россия 1, НТВ, РЕН ТВ...",
-      "icon": "tv",
-      "color": "#1565C0",
-      "action": "content:https://evgeniy9607.github.io/msx/tv-federal.json"
+      "label": "Первый канал",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=1tv.ru&sz=128",
+      "color": "#003087",
+      "action": "video:http://dmi3y-tv6.ru/hls/DVB-T2/CH_1TV.m3u8"
     },
     {
-      "label": "Новости",
-      "sublabel": "Россия 24, Первый, НТВ",
-      "icon": "public",
-      "color": "#B71C1C",
-      "action": "content:https://evgeniy9607.github.io/msx/tv-news.json"
+      "label": "Россия 1",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=russia.tv&sz=128",
+      "color": "#C8102E",
+      "action": "video:https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia1-hd/index.m3u8"
     },
     {
-      "label": "Развлекательные",
-      "sublabel": "ТНТ, СТС, Пятница, ТВ-3",
-      "icon": "mood",
-      "color": "#FF6F00",
-      "action": "content:https://evgeniy9607.github.io/msx/tv-entertainment.json"
+      "label": "Россия 24",
+      "sublabel": "Новости 24/7",
+      "image": "https://www.google.com/s2/favicons?domain=russia.tv&sz=128",
+      "color": "#1A3A6C",
+      "action": "video:https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8"
     },
     {
-      "label": "Детские",
-      "sublabel": "Карусель, Мульт ТВ",
-      "icon": "child-care",
-      "color": "#4CAF50",
-      "action": "content:https://evgeniy9607.github.io/msx/tv-kids.json"
+      "label": "НТВ",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=ntv.ru&sz=128",
+      "color": "#007A33",
+      "action": "video:https://cdn.ntv.ru/ntv0/playlist.m3u8"
     },
     {
-      "label": "Спорт",
-      "sublabel": "Матч ТВ",
-      "icon": "fitness-center",
-      "color": "#E65100",
-      "action": "content:https://evgeniy9607.github.io/msx/tv-sport.json"
+      "label": "Пятый канал",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=5-tv.ru&sz=128",
+      "color": "#0056A2",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_5TV/variant.m3u8"
+    },
+    {
+      "label": "РЕН ТВ",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=ren.tv&sz=128",
+      "color": "#880000",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_RENTV/variant.m3u8"
+    },
+    {
+      "label": "Звезда",
+      "sublabel": "Прямой эфир",
+      "image": "https://www.google.com/s2/favicons?domain=tvzvezda.ru&sz=128",
+      "color": "#CC0000",
+      "action": "video:https://tvchannelstream1.tvzvezda.ru/cdn/tvzvezda/playlist.m3u8"
+    },
+    {
+      "label": "ТНТ",
+      "sublabel": "Развлечения",
+      "image": "https://www.google.com/s2/favicons?domain=tnt-online.ru&sz=128",
+      "color": "#CC0000",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TNT/variant.m3u8"
+    },
+    {
+      "label": "СТС",
+      "sublabel": "Развлечения",
+      "image": "https://www.google.com/s2/favicons?domain=ctc.ru&sz=128",
+      "color": "#FF5A00",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_STS/variant.m3u8"
+    },
+    {
+      "label": "Пятница",
+      "sublabel": "Развлечения",
+      "image": "https://www.google.com/s2/favicons?domain=friday.ru&sz=128",
+      "color": "#FF4F00",
+      "action": "video:https://vod.tuva.ru/friday/index.m3u8"
+    },
+    {
+      "label": "ТВ-3",
+      "sublabel": "Мистика и фантастика",
+      "image": "https://www.google.com/s2/favicons?domain=tv3.ru&sz=128",
+      "color": "#5B2D8E",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_TV3/variant.m3u8"
+    },
+    {
+      "label": "Матч ТВ",
+      "sublabel": "Спорт в прямом эфире",
+      "image": "https://www.google.com/s2/favicons?domain=matchtv.ru&sz=128",
+      "color": "#FF6B00",
+      "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8"
+    },
+    {
+      "label": "Мульт",
+      "sublabel": "Детский канал",
+      "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
+      "color": "#F5A623",
+      "action": "video:http://31.148.48.15/Mult/index.m3u8"
     }
   ]
 }

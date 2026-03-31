@@ -11,42 +11,42 @@
     {
       "label": "YouTube",
       "sublabel": "Видео на любой вкус",
-      "image": "https://logo.clearbit.com/youtube.com",
+      "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
       "color": "#FF0000",
       "action": "panel:https://www.youtube.com"
     },
     {
       "label": "RuTube",
       "sublabel": "Российское видео",
-      "image": "https://logo.clearbit.com/rutube.ru",
+      "image": "https://www.google.com/s2/favicons?domain=rutube.ru&sz=128",
       "color": "#1A1ADB",
       "action": "panel:https://rutube.ru"
     },
     {
       "label": "Смотрим",
       "sublabel": "ВГТРК онлайн",
-      "image": "https://logo.clearbit.com/smotrim.ru",
+      "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
       "color": "#C8102E",
       "action": "panel:https://smotrim.ru"
     },
     {
       "label": "VK Видео",
       "sublabel": "Видео и клипы",
-      "image": "https://logo.clearbit.com/vkvideo.ru",
+      "image": "https://www.google.com/s2/favicons?domain=vkvideo.ru&sz=128",
       "color": "#0077FF",
       "action": "panel:https://vkvideo.ru"
     },
     {
       "label": "Zona",
       "sublabel": "Фильмы и сериалы",
-      "image": "https://logo.clearbit.com/zona.mobi",
+      "image": "https://www.google.com/s2/favicons?domain=zona.mobi&sz=128",
       "color": "#00C853",
       "action": "panel:https://zona.mobi"
     },
     {
       "label": "Atodo",
       "sublabel": "Бесплатные фильмы",
-      "image": "https://logo.clearbit.com/atodo.ru",
+      "image": "https://www.google.com/s2/favicons?domain=atodo.ru&sz=128",
       "color": "#6200EA",
       "action": "panel:https://atodo.ru"
     }

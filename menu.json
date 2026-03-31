@@ -39,7 +39,7 @@
             "color": "#222222",
             "tag": "NEW",
             "tagColor": "#4CAF50",
-            "action": "link:https://tizen.okko.tv"
+            "action": "panel:https://okko.tv"
           },
           {
             "label": "Premier",
@@ -231,21 +231,7 @@
             "sublabel": "Мультфильмы и сказки",
             "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
             "color": "#00AACC",
-            "action": "link:https://lg.ivi.ru/"
-          },
-          {
-            "label": "Мульт",
-            "sublabel": "Телеканал мультфильмов",
-            "image": "https://www.google.com/s2/favicons?domain=mult.ru&sz=128",
-            "color": "#F5A623",
-            "action": "link:https://mult.ru/online"
-          },
-          {
-            "label": "Карусель",
-            "sublabel": "Детский телеканал",
-            "image": "https://www.google.com/s2/favicons?domain=karusel.tv&sz=128",
-            "color": "#FF7F00",
-            "action": "link:https://karusel.tv/air"
+            "action": "link:https://www.ivi.ru/animation"
           },
           {
             "label": "Мульт Россия",

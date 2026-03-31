@@ -12,35 +12,21 @@
     {
       "label": "YouTube Kids",
       "sublabel": "Безопасное видео для детей",
-      "image": "https://logo.clearbit.com/youtube.com",
+      "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
       "color": "#FF0000",
       "action": "panel:https://www.youtubekids.com"
     },
     {
       "label": "IVI Детям",
       "sublabel": "Мультфильмы и сказки",
-      "image": "https://logo.clearbit.com/ivi.ru",
+      "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
       "color": "#00AACC",
-      "action": "panel:https://www.ivi.ru/kids"
-    },
-    {
-      "label": "Мульт",
-      "sublabel": "Телеканал мультфильмов",
-      "image": "https://logo.clearbit.com/mult.ru",
-      "color": "#F5A623",
-      "action": "panel:https://mult.ru/online"
-    },
-    {
-      "label": "Карусель",
-      "sublabel": "Детский телеканал",
-      "image": "https://logo.clearbit.com/karusel.tv",
-      "color": "#FF7F00",
-      "action": "panel:https://karusel.tv/air"
+      "action": "panel:https://www.ivi.ru/animation"
     },
     {
       "label": "Мульт Россия",
       "sublabel": "Советские мультфильмы",
-      "image": "https://logo.clearbit.com/smotrim.ru",
+      "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
       "color": "#E8192C",
       "action": "panel:https://smotrim.ru/brand/57819"
     }

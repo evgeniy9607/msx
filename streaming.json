@@ -11,70 +11,70 @@
     {
       "label": "Кинопоиск HD",
       "sublabel": "Фильмы и сериалы",
-      "image": "https://logo.clearbit.com/kinopoisk.ru",
+      "image": "https://www.google.com/s2/favicons?domain=kinopoisk.ru&sz=128",
       "color": "#FF6400",
       "action": "panel:https://hd.kinopoisk.ru"
     },
     {
       "label": "IVI",
       "sublabel": "Фильмы и сериалы",
-      "image": "https://logo.clearbit.com/ivi.ru",
+      "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
       "color": "#00AACC",
       "action": "panel:https://www.ivi.ru"
     },
     {
       "label": "Okko",
       "sublabel": "Фильмы, сериалы, спорт",
-      "image": "https://logo.clearbit.com/okko.tv",
+      "image": "https://www.google.com/s2/favicons?domain=okko.tv&sz=128",
       "color": "#222222",
       "action": "panel:https://okko.tv"
     },
     {
       "label": "Premier",
       "sublabel": "Сериалы и шоу",
-      "image": "https://logo.clearbit.com/premier.one",
+      "image": "https://www.google.com/s2/favicons?domain=premier.one&sz=128",
       "color": "#0A0A1A",
       "action": "panel:https://premier.one"
     },
     {
       "label": "START",
       "sublabel": "Оригинальные сериалы",
-      "image": "https://logo.clearbit.com/start.ru",
+      "image": "https://www.google.com/s2/favicons?domain=start.ru&sz=128",
       "color": "#1C1C1C",
       "action": "panel:https://start.ru"
     },
     {
       "label": "Megogo",
       "sublabel": "Фильмы, ТВ, спорт",
-      "image": "https://logo.clearbit.com/megogo.net",
+      "image": "https://www.google.com/s2/favicons?domain=megogo.net&sz=128",
       "color": "#009DE0",
       "action": "panel:https://megogo.net/ru"
     },
     {
       "label": "Амедиатека",
       "sublabel": "HBO и мировые хиты",
-      "image": "https://logo.clearbit.com/amediateka.ru",
+      "image": "https://www.google.com/s2/favicons?domain=amediateka.ru&sz=128",
       "color": "#2B2B2B",
       "action": "panel:https://www.amediateka.ru"
     },
     {
       "label": "More.tv",
       "sublabel": "Стриминг НМГ",
-      "image": "https://logo.clearbit.com/more.tv",
+      "image": "https://www.google.com/s2/favicons?domain=more.tv&sz=128",
       "color": "#00A3E0",
       "action": "panel:https://more.tv"
     },
     {
       "label": "Kion",
       "sublabel": "МТС стриминг",
-      "image": "https://logo.clearbit.com/kion.ru",
+      "image": "https://www.google.com/s2/favicons?domain=kion.ru&sz=128",
       "color": "#6B1FCD",
       "action": "panel:https://kion.ru"
     },
     {
       "label": "Wink",
       "sublabel": "Ростелеком",
-      "image": "https://logo.clearbit.com/wink.ru",
+      "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
       "color": "#FF4B00",
       "action": "panel:https://wink.ru"
     }
