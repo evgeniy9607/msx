@@ -12,21 +12,21 @@
     {
       "label": "Россия 24",
       "sublabel": "Новости 24/7",
-      "image": "https://logo.clearbit.com/russia.tv",
+      "image": "https://www.google.com/s2/favicons?domain=russia.tv&sz=128",
       "color": "#1A3A6C",
       "action": "video:https://vgtrkregion-reg.cdnvideo.ru/vgtrk/0/russia24-hd/720p.m3u8"
     },
     {
       "label": "Первый канал",
       "sublabel": "Новости Первого",
-      "image": "https://logo.clearbit.com/1tv.ru",
+      "image": "https://www.google.com/s2/favicons?domain=1tv.ru&sz=128",
       "color": "#003087",
       "action": "video:http://dmi3y-tv6.ru/hls/DVB-T2/CH_1TV.m3u8"
     },
     {
       "label": "НТВ",
       "sublabel": "Новости НТВ",
-      "image": "https://logo.clearbit.com/ntv.ru",
+      "image": "https://www.google.com/s2/favicons?domain=ntv.ru&sz=128",
       "color": "#007A33",
       "action": "video:https://cdn.ntv.ru/ntv0/playlist.m3u8"
     }

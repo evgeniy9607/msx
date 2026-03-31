@@ -12,14 +12,14 @@
     {
       "label": "Карусель",
       "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/karusel.tv",
+      "image": "https://www.google.com/s2/favicons?domain=karusel.tv&sz=128",
       "color": "#FF7F00",
       "action": "video:https://streaming102.interskytech.com/live/232.m3u8"
     },
     {
       "label": "Мульт",
       "sublabel": "Прямой эфир",
-      "image": "https://logo.clearbit.com/mult.ru",
+      "image": "https://www.google.com/s2/favicons?domain=mult.ru&sz=128",
       "color": "#F5A623",
       "action": "video:http://31.148.48.15/Mult/index.m3u8"
     }

@@ -12,7 +12,7 @@
     {
       "label": "Матч ТВ",
       "sublabel": "Спорт в прямом эфире",
-      "image": "https://logo.clearbit.com/matchtv.ru",
+      "image": "https://www.google.com/s2/favicons?domain=matchtv.ru&sz=128",
       "color": "#FF6B00",
       "action": "video:https://zabava-htlive.cdn.ngenix.net/hls/CH_MATCHTV/variant.m3u8"
     }
