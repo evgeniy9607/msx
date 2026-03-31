@@ -30,7 +30,7 @@
             "sublabel": "Фильмы и сериалы",
             "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
             "color": "#00AACC",
-            "action": "panel:https://www.ivi.ru"
+            "action": "link:https://www.ivi.ru"
           },
           {
             "label": "Okko",
