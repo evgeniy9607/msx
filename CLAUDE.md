@@ -15,23 +15,17 @@ Media Station X (MSX) Smart TV portal — a launcher interface built entirely wi
 - **start.json** — Application Root Object. Loads `menu.json` via `parameter: "menu:URL"`. Also sets the dictionary for UI localization.
 - **menu.json** — Menu Root Object. Renders a sidebar on the left with 5 categories. Contains inline data for 4 categories and an external URL reference for TV.
 
-**Sidebar categories (5):**
+**Sidebar categories (5 + Settings):**
 
-| Category | Icon | Content source | Action type |
-|----------|------|---------------|-------------|
-| Онлайн-кинотеатры | `movie` | inline in menu.json | `link:` (opens SmartTV app) |
-| Бесплатные сервисы | `play-circle-outline` | inline in menu.json | `link:` (opens SmartTV app) |
-| ТВ Каналы | `live-tv` | external `tv.json` | `content:` (subcategories) |
-| IPTV | `settings-input-antenna` | inline in menu.json | `link:` (opens SmartTV app) |
-| Детям | `child-care` | inline in menu.json | `link:` (opens SmartTV app) |
+| Category | Icon | Content source | Action types used |
+|----------|------|---------------|-------------------|
+| Онлайн-кинотеатры | `movie` | inline in menu.json (9 items) | mixed: `link:` (SmartTV apps) + `panel:` (MSX browser) |
+| Бесплатные сервисы | `play-circle-outline` | inline in menu.json (6 items) | mixed: `link:`, `panel:`, `menu:request:interaction:` |
+| ТВ Каналы | `live-tv` | external `tv.json` | `video:` (HLS streams) |
+| IPTV | `settings-input-antenna` | inline in menu.json (5 items) | `link:` (opens SmartTV app) |
+| Детям | `child-care` | inline in menu.json (3 items) | mixed: `link:` + `panel:` |
 
-**TV subcategories (tv.json → external files):**
-
-- **tv-federal.json** — Федеральные каналы (Первый, Россия 1, НТВ, etc.)
-- **tv-news.json** — Новости (Россия 24, etc.)
-- **tv-entertainment.json** — Развлекательные (ТНТ, СТС, Пятница, etc.)
-- **tv-kids.json** — Детские (Карусель, Мульт)
-- **tv-sport.json** — Спорт (Матч ТВ)
+**TV channels (tv.json):** flat list of channels with direct `video:` HLS stream actions. No subcategories yet.
 
 **Standalone content files (alternative access):**
 
@@ -87,7 +81,7 @@ Static files hosted on GitHub Pages from the `main` branch. Push to `main` → w
 ## Conventions
 
 - All UI text in Russian
-- Service logos via Clearbit: `https://logo.clearbit.com/{domain}`
+- Service logos via Google Favicons: `https://www.google.com/s2/favicons?domain={domain}&sz=128`
 - Colors are brand-specific hex values per service
 - MSX icon names follow Material Design (e.g., `movie`, `live-tv`, `child-care`)
 - All service URLs must use HTTPS (except HLS video streams where HTTPS is unavailable)
