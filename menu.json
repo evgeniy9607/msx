@@ -146,7 +146,7 @@
     {
       "icon": "live-tv",
       "label": "ТВ Каналы",
-      "data": "https://evgeniy9607.github.io/msx/tv.json"
+      "data": "http://155.212.247.44/api/tv"
     },
     {
       "icon": "settings-input-antenna",
