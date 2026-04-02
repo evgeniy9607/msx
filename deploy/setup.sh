@@ -6,6 +6,8 @@
 
 set -e
 
+export DEBIAN_FRONTEND=noninteractive
+
 SERVER_IP="155.212.247.44"
 PROJECT_DIR="/opt/msx"
 GITHUB_REPO="https://github.com/evgeniy9607/msx.git"
@@ -16,7 +18,7 @@ echo "============================================"
 
 # 1. Обновление системы
 echo "[1/7] Обновление системы..."
-apt update && apt upgrade -y
+apt update && apt upgrade -y -o Dpkg::Options::="--force-confold"
 apt install -y curl wget git ufw htop nano
 
 # 2. Установка Docker
