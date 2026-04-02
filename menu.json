@@ -1,245 +1,267 @@
 {
   "dictionary": "https://evgeniy9607.github.io/msx/dictionary.json",
-  "headline": "Smart TV Портал",
+  "headline": "XXI VEK | Smart TV",
   "transparent": 2,
-  "background": "https://evgeniy9607.github.io/msx/background.png",
-  "menu": [
-    {
-      "icon": "movie",
-      "label": "Онлайн-кинотеатры",
-      "data": {
+  "menu": {
+    "type": "layers",
+    "background": {
+      "type": "gradient",
+      "gradient": "linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 60%, #3a3a00 100%)"
+    },
+    "content": [
+      {
+        "type": "particles",
+        "parameters": {
+          "count": 80,
+          "color": "#ffff00",
+          "color_alpha": 0.25,
+          "size": { "min": 1, "max": 2.5 },
+          "speed": { "min": 0.1, "max": 0.3 },
+          "direction": 45
+        }
+      },
+      {
         "type": "list",
-        "compress": true,
-        "template": {
-          "type": "separate",
-          "layout": "0,0,2,3",
-          "color": "msx-glass"
-        },
         "items": [
           {
-            "label": "Кинопоиск HD",
-            "sublabel": "Фильмы и сериалы",
-            "image": "https://www.google.com/s2/favicons?domain=kinopoisk.ru&sz=128",
-            "color": "#FF6400",
-            "badge": "TOP",
-            "badgeColor": "#E50000",
-            "action": "link:https://smarttv-app.ott.yandex.ru/"
+            "icon": "movie",
+            "label": "Онлайн-кинотеатры",
+            "data": {
+              "type": "list",
+              "compress": true,
+              "template": {
+                "type": "separate",
+                "layout": "0,0,2,3",
+                "color": "msx-glass"
+              },
+              "items": [
+                {
+                  "label": "Кинопоиск HD",
+                  "sublabel": "Фильмы и сериалы",
+                  "image": "https://www.google.com/s2/favicons?domain=kinopoisk.ru&sz=128",
+                  "color": "#FF6400",
+                  "badge": "TOP",
+                  "badgeColor": "#E50000",
+                  "action": "link:https://smarttv-app.ott.yandex.ru/"
+                },
+                {
+                  "label": "IVI",
+                  "sublabel": "Фильмы и сериалы",
+                  "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
+                  "color": "#00AACC",
+                  "action": "link:https://www.ivi.ru"
+                },
+                {
+                  "label": "Okko",
+                  "sublabel": "Фильмы, сериалы, спорт",
+                  "image": "https://www.google.com/s2/favicons?domain=okko.tv&sz=128",
+                  "color": "#222222",
+                  "tag": "NEW",
+                  "tagColor": "#4CAF50",
+                  "action": "panel:https://okko.tv"
+                },
+                {
+                  "label": "Premier",
+                  "sublabel": "Сериалы и шоу",
+                  "image": "https://www.google.com/s2/favicons?domain=premier.one&sz=128",
+                  "color": "#0A0A1A",
+                  "action": "link:https://smarttv.premier.one"
+                },
+                {
+                  "label": "START",
+                  "sublabel": "Оригинальные сериалы",
+                  "image": "https://www.google.com/s2/favicons?domain=start.ru&sz=128",
+                  "color": "#1C1C1C",
+                  "action": "panel:https://start.ru"
+                },
+                {
+                  "label": "Megogo",
+                  "sublabel": "Фильмы, ТВ, спорт",
+                  "image": "https://www.google.com/s2/favicons?domain=megogo.net&sz=128",
+                  "color": "#009DE0",
+                  "action": "panel:https://megogo.net"
+                },
+                {
+                  "label": "Амедиатека",
+                  "sublabel": "HBO и мировые хиты",
+                  "image": "https://www.google.com/s2/favicons?domain=amediateka.ru&sz=128",
+                  "color": "#2B2B2B",
+                  "action": "panel:https://www.amediateka.ru"
+                },
+                {
+                  "label": "Kion",
+                  "sublabel": "МТС стриминг",
+                  "image": "https://www.google.com/s2/favicons?domain=kion.ru&sz=128",
+                  "color": "#6B1FCD",
+                  "action": "link:https://kion.ru/EPG/smarttvlg/index.html"
+                },
+                {
+                  "label": "Wink",
+                  "sublabel": "Ростелеком",
+                  "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
+                  "color": "#FF4B00",
+                  "action": "link:https://wink.ru"
+                }
+              ]
+            }
           },
           {
-            "label": "IVI",
-            "sublabel": "Фильмы и сериалы",
-            "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
-            "color": "#00AACC",
-            "action": "link:https://www.ivi.ru"
+            "icon": "play-circle-outline",
+            "label": "Бесплатные сервисы",
+            "data": {
+              "type": "list",
+              "compress": true,
+              "template": {
+                "type": "separate",
+                "layout": "0,0,2,3",
+                "color": "msx-glass"
+              },
+              "items": [
+                {
+                  "label": "Atodo",
+                  "sublabel": "Фильмы, сериалы, аниме",
+                  "image": "https://www.google.com/s2/favicons?domain=atodo.ru&sz=128",
+                  "color": "#6200EA",
+                  "action": "menu:request:interaction:menu@https://atodo.fun/fun.html"
+                },
+                {
+                  "label": "RuTube",
+                  "sublabel": "Российское видео",
+                  "image": "https://www.google.com/s2/favicons?domain=rutube.ru&sz=128",
+                  "color": "#1A1ADB",
+                  "action": "link:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
+                },
+                {
+                  "label": "VK Видео",
+                  "sublabel": "Видео и клипы",
+                  "image": "https://www.google.com/s2/favicons?domain=vk.com&sz=128",
+                  "color": "#0077FF",
+                  "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
+                },
+                {
+                  "label": "Яндекс Эфир",
+                  "sublabel": "ТВ каналы онлайн",
+                  "image": "https://www.google.com/s2/favicons?domain=yandex.ru&sz=128",
+                  "color": "#FFCC00",
+                  "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
+                },
+                {
+                  "label": "Смотрим",
+                  "sublabel": "ВГТРК онлайн",
+                  "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
+                  "color": "#C8102E",
+                  "action": "link:https://tv.smotrim.ru"
+                },
+                {
+                  "label": "YouTube",
+                  "sublabel": "Видео на любой вкус",
+                  "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
+                  "color": "#FF0000",
+                  "action": "link:https://www.youtube.com/tv#/"
+                }
+              ]
+            }
           },
           {
-            "label": "Okko",
-            "sublabel": "Фильмы, сериалы, спорт",
-            "image": "https://www.google.com/s2/favicons?domain=okko.tv&sz=128",
-            "color": "#222222",
-            "tag": "NEW",
-            "tagColor": "#4CAF50",
-            "action": "panel:https://okko.tv"
+            "icon": "live-tv",
+            "label": "ТВ Каналы",
+            "data": "http://155.212.247.44/api/tv"
           },
           {
-            "label": "Premier",
-            "sublabel": "Сериалы и шоу",
-            "image": "https://www.google.com/s2/favicons?domain=premier.one&sz=128",
-            "color": "#0A0A1A",
-            "action": "link:https://smarttv.premier.one"
+            "icon": "settings-input-antenna",
+            "label": "IPTV",
+            "data": {
+              "type": "list",
+              "compress": true,
+              "template": {
+                "type": "default",
+                "layout": "0,0,6,1",
+                "color": "msx-glass",
+                "imageFiller": "height-left"
+              },
+              "items": [
+                {
+                  "label": "OTT-Play",
+                  "sublabel": "IPTV плеер",
+                  "image": "https://www.google.com/s2/favicons?domain=ott-play.com&sz=128",
+                  "color": "#1565C0",
+                  "action": "link:https://ott-play.com/f/"
+                },
+                {
+                  "label": "DRM-Play",
+                  "sublabel": "IPTV плеер с DRM",
+                  "image": "https://www.google.com/s2/favicons?domain=drm-play.com&sz=128",
+                  "color": "#263238",
+                  "action": "link:https://ott.drm-play.com"
+                },
+                {
+                  "label": "OTT-Player",
+                  "sublabel": "Сборка плейлистов",
+                  "image": "https://www.google.com/s2/favicons?domain=ottplayer.tv&sz=128",
+                  "color": "#4CAF50",
+                  "action": "link:https://widget.ottplayer.tv"
+                },
+                {
+                  "label": "Lampa",
+                  "sublabel": "Каталог фильмов и сериалов",
+                  "image": "https://www.google.com/s2/favicons?domain=lampa.stream&sz=128",
+                  "color": "#E65100",
+                  "action": "link:https://lampa.stream"
+                },
+                {
+                  "label": "Filmix",
+                  "sublabel": "Фильмы и сериалы",
+                  "image": "https://www.google.com/s2/favicons?domain=filmix.tv&sz=128",
+                  "color": "#1A1A2E",
+                  "action": "link:https://filmix.tv/"
+                }
+              ]
+            }
           },
           {
-            "label": "START",
-            "sublabel": "Оригинальные сериалы",
-            "image": "https://www.google.com/s2/favicons?domain=start.ru&sz=128",
-            "color": "#1C1C1C",
-            "action": "panel:https://start.ru"
+            "icon": "child-care",
+            "label": "Детям",
+            "data": {
+              "type": "list",
+              "compress": true,
+              "template": {
+                "type": "default",
+                "layout": "0,0,6,1",
+                "color": "msx-glass",
+                "imageFiller": "height-left"
+              },
+              "items": [
+                {
+                  "label": "YouTube Kids",
+                  "sublabel": "Безопасное видео для детей",
+                  "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
+                  "color": "#FF0000",
+                  "action": "link:https://www.youtube.com/tv/kids"
+                },
+                {
+                  "label": "IVI Детям",
+                  "sublabel": "Мультфильмы и сказки",
+                  "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
+                  "color": "#00AACC",
+                  "action": "panel:https://www.ivi.ru/animation"
+                },
+                {
+                  "label": "Мульт Россия",
+                  "sublabel": "Советские мультфильмы",
+                  "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
+                  "color": "#E8192C",
+                  "action": "link:https://tv.smotrim.ru"
+                }
+              ]
+            }
           },
           {
-            "label": "Megogo",
-            "sublabel": "Фильмы, ТВ, спорт",
-            "image": "https://www.google.com/s2/favicons?domain=megogo.net&sz=128",
-            "color": "#009DE0",
-            "action": "panel:https://megogo.net"
-          },
-          {
-            "label": "Амедиатека",
-            "sublabel": "HBO и мировые хиты",
-            "image": "https://www.google.com/s2/favicons?domain=amediateka.ru&sz=128",
-            "color": "#2B2B2B",
-            "action": "panel:https://www.amediateka.ru"
-          },
-          {
-            "label": "Kion",
-            "sublabel": "МТС стриминг",
-            "image": "https://www.google.com/s2/favicons?domain=kion.ru&sz=128",
-            "color": "#6B1FCD",
-            "action": "link:https://kion.ru/EPG/smarttvlg/index.html"
-          },
-          {
-            "label": "Wink",
-            "sublabel": "Ростелеком",
-            "image": "https://www.google.com/s2/favicons?domain=wink.ru&sz=128",
-            "color": "#FF4B00",
-            "action": "link:https://wink.ru"
+            "type": "settings",
+            "icon": "settings",
+            "label": "Настройки"
           }
         ]
       }
-    },
-    {
-      "icon": "play-circle-outline",
-      "label": "Бесплатные сервисы",
-      "data": {
-        "type": "list",
-        "compress": true,
-        "template": {
-          "type": "separate",
-          "layout": "0,0,2,3",
-          "color": "msx-glass"
-        },
-        "items": [
-          {
-            "label": "Atodo",
-            "sublabel": "Фильмы, сериалы, аниме",
-            "image": "https://www.google.com/s2/favicons?domain=atodo.ru&sz=128",
-            "color": "#6200EA",
-            "action": "menu:request:interaction:menu@https://atodo.fun/fun.html"
-          },
-          {
-            "label": "RuTube",
-            "sublabel": "Российское видео",
-            "image": "https://www.google.com/s2/favicons?domain=rutube.ru&sz=128",
-            "color": "#1A1ADB",
-            "action": "link:https://rutube.ru/tv-release/rutube.server-22.0.0/webos/"
-          },
-          {
-            "label": "VK Видео",
-            "sublabel": "Видео и клипы",
-            "image": "https://www.google.com/s2/favicons?domain=vk.com&sz=128",
-            "color": "#0077FF",
-            "action": "link:https://vk.ru/tv-app/lib?version=1.3.13&platform=webos"
-          },
-          {
-            "label": "Яндекс Эфир",
-            "sublabel": "ТВ каналы онлайн",
-            "image": "https://www.google.com/s2/favicons?domain=yandex.ru&sz=128",
-            "color": "#FFCC00",
-            "action": "link:https://yandex.ru/video/tvapp/?ui=tvapp"
-          },
-          {
-            "label": "Смотрим",
-            "sublabel": "ВГТРК онлайн",
-            "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
-            "color": "#C8102E",
-            "action": "link:https://tv.smotrim.ru"
-          },
-          {
-            "label": "YouTube",
-            "sublabel": "Видео на любой вкус",
-            "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
-            "color": "#FF0000",
-            "action": "link:https://www.youtube.com/tv#/"
-          }
-        ]
-      }
-    },
-    {
-      "icon": "live-tv",
-      "label": "ТВ Каналы",
-      "data": "http://155.212.247.44/api/tv"
-    },
-    {
-      "icon": "settings-input-antenna",
-      "label": "IPTV",
-      "data": {
-        "type": "list",
-        "compress": true,
-        "template": {
-          "type": "default",
-          "layout": "0,0,6,1",
-          "color": "msx-glass",
-          "imageFiller": "height-left"
-        },
-        "items": [
-          {
-            "label": "OTT-Play",
-            "sublabel": "IPTV плеер",
-            "image": "https://www.google.com/s2/favicons?domain=ott-play.com&sz=128",
-            "color": "#1565C0",
-            "action": "link:https://ott-play.com/f/"
-          },
-          {
-            "label": "DRM-Play",
-            "sublabel": "IPTV плеер с DRM",
-            "image": "https://www.google.com/s2/favicons?domain=drm-play.com&sz=128",
-            "color": "#263238",
-            "action": "link:https://ott.drm-play.com"
-          },
-          {
-            "label": "OTT-Player",
-            "sublabel": "Сборка плейлистов",
-            "image": "https://www.google.com/s2/favicons?domain=ottplayer.tv&sz=128",
-            "color": "#4CAF50",
-            "action": "link:https://widget.ottplayer.tv"
-          },
-          {
-            "label": "Lampa",
-            "sublabel": "Каталог фильмов и сериалов",
-            "image": "https://www.google.com/s2/favicons?domain=lampa.stream&sz=128",
-            "color": "#E65100",
-            "action": "link:https://lampa.stream"
-          },
-          {
-            "label": "Filmix",
-            "sublabel": "Фильмы и сериалы",
-            "image": "https://www.google.com/s2/favicons?domain=filmix.tv&sz=128",
-            "color": "#1A1A2E",
-            "action": "link:https://filmix.tv/"
-          }
-        ]
-      }
-    },
-    {
-      "icon": "child-care",
-      "label": "Детям",
-      "data": {
-        "type": "list",
-        "compress": true,
-        "template": {
-          "type": "default",
-          "layout": "0,0,6,1",
-          "color": "msx-glass",
-          "imageFiller": "height-left"
-        },
-        "items": [
-          {
-            "label": "YouTube Kids",
-            "sublabel": "Безопасное видео для детей",
-            "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
-            "color": "#FF0000",
-            "action": "link:https://www.youtube.com/tv/kids"
-          },
-          {
-            "label": "IVI Детям",
-            "sublabel": "Мультфильмы и сказки",
-            "image": "https://www.google.com/s2/favicons?domain=ivi.ru&sz=128",
-            "color": "#00AACC",
-            "action": "panel:https://www.ivi.ru/animation"
-          },
-          {
-            "label": "Мульт Россия",
-            "sublabel": "Советские мультфильмы",
-            "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
-            "color": "#E8192C",
-            "action": "link:https://tv.smotrim.ru"
-          }
-        ]
-      }
-    },
-    {
-      "type": "settings",
-      "icon": "settings",
-      "label": "Настройки"
-    }
-  ]
+    ]
+  }
 }
