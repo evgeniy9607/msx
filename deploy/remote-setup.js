@@ -1,10 +1,10 @@
+require('dotenv').config({ path: __dirname + '/.env' });
 const { Client } = require('./node_modules/ssh2');
 const fs = require('fs');
 const path = require('path');
 
 const conn = new Client();
-const HOST = '155.212.247.44';
-const PASSWORD = 'REDACTED';
+const HOST = process.env.VPS_HOST;
 
 // Читаем скрипт setup.sh
 const setupScript = fs.readFileSync(path.join(__dirname, 'setup.sh'), 'utf8');
@@ -47,7 +47,7 @@ conn.on('error', (err) => {
 conn.connect({
   host: HOST,
   port: 22,
-  username: 'root',
-  password: PASSWORD,
+  username: process.env.VPS_USER,
+  password: process.env.VPS_PASSWORD,
   readyTimeout: 15000
 });

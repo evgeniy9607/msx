@@ -4,15 +4,14 @@ const { Client } = require('./node_modules/ssh2');
 const conn = new Client();
 
 const COMMAND = `
-echo "=== Проверка DNS через публичные серверы ==="
-echo "Google DNS (8.8.8.8):"
-dig @8.8.8.8 xxitv.ru A +short 2>/dev/null || nslookup xxitv.ru 8.8.8.8 2>/dev/null | grep Address | tail -1
+echo "=== Через NS AdminVPS ==="
+dig @ns1.adminvps.ru xxitv.ru A +short 2>/dev/null
 echo ""
-echo "Cloudflare DNS (1.1.1.1):"
-dig @1.1.1.1 xxitv.ru A +short 2>/dev/null || nslookup xxitv.ru 1.1.1.1 2>/dev/null | grep Address | tail -1
+echo "=== Через ns3 ==="
+dig @ns3.adminvps.ru xxitv.ru A +short 2>/dev/null
 echo ""
-echo "Системный DNS:"
-dig xxitv.ru A +short 2>/dev/null || nslookup xxitv.ru 2>/dev/null | grep Address | tail -1
+echo "=== whois NS ==="
+whois xxitv.ru 2>/dev/null | grep -i "nserver" || echo "whois не установлен"
 `;
 
 conn.on('ready', () => {

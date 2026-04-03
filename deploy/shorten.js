@@ -1,3 +1,4 @@
+require('dotenv').config({ path: __dirname + '/.env' });
 const { Client } = require('./node_modules/ssh2');
 
 const conn = new Client();
@@ -32,9 +33,9 @@ conn.on('ready', () => {
 conn.on('error', (err) => console.error('Ошибка:', err.message));
 
 conn.connect({
-  host: '155.212.247.44',
+  host: process.env.VPS_HOST,
   port: 22,
-  username: 'root',
-  password: 'REDACTED',
+  username: process.env.VPS_USER,
+  password: process.env.VPS_PASSWORD,
   readyTimeout: 15000
 });
