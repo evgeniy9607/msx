@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Media Station X (MSX) Smart TV portal — a launcher interface built entirely with static JSON files. No build step, no dependencies, no source code. Files are served via GitHub Pages at `evgeniy9607.github.io/msx/`.
+Media Station X (MSX) Smart TV portal — a launcher interface built entirely with static JSON files. No build step, no dependencies, no source code. Dual-hosted: GitHub Pages (`evgeniy9607.github.io/msx/`) and VPS (`xxitv.ru`).
 
 ## Architecture
 
@@ -21,19 +21,17 @@ Media Station X (MSX) Smart TV portal — a launcher interface built entirely wi
 |----------|------|---------------|-------------------|
 | Онлайн-кинотеатры | `movie` | inline in menu.json (9 items) | mixed: `link:` (SmartTV apps) + `panel:` (MSX browser) |
 | Бесплатные сервисы | `play-circle-outline` | inline in menu.json (6 items) | mixed: `link:`, `panel:`, `menu:request:interaction:` |
-| ТВ Каналы | `live-tv` | external `tv.json` | `video:` (HLS streams) |
-| IPTV | `settings-input-antenna` | inline in menu.json (5 items) | `link:` (opens SmartTV app) |
+| ТВ Каналы | `live-tv` | VPS API `https://xxitv.ru/api/tv` | `video:` (HLS streams) |
+| IPTV | `settings-input-antenna` | inline in menu.json (6 items) | `link:` + `panel:` (TorrServer) |
 | Детям | `child-care` | inline in menu.json (3 items) | mixed: `link:` + `panel:` |
 
-**TV channels (tv.json):** flat list of channels with direct `video:` HLS stream actions. No subcategories yet.
+**TV channels:** served dynamically by VPS API (`https://xxitv.ru/api/tv`). API checks HLS stream availability and returns MSX Content Root Object. Fallback: `tv-cache.json` (auto-cached every 10 min) served by nginx if API is down.
 
-**Standalone content files (alternative access):**
+**VPS (`xxitv.ru` / `155.212.247.44`):** Docker stack — nginx (reverse proxy + static), msx-api (Node.js, TV channel monitoring), TorrServer (torrent streaming). SSL via Let's Encrypt (auto-renewed). SSH user: `msx` (root disabled).
 
-- **streaming.json** — Стриминговые сервисы (uses `panel:` action, Clearbit logos)
-- **free.json** — Бесплатный контент (uses `panel:` action, Clearbit logos)
-- **kids.json** — Детский контент (uses `panel:` action, Clearbit logos)
+**Standalone content files (legacy, not linked in menu):**
 
-Note: Standalone files use `panel:` with generic web URLs. Menu.json inline uses `link:` with SmartTV-specific URLs (LG/WebOS apps). These are intentionally different — `link:` launches native TV apps, `panel:` opens in MSX's built-in browser.
+- **streaming.json**, **free.json**, **kids.json** — alternative access via direct URL, use `panel:` actions with generic web URLs (vs `link:` with SmartTV URLs in menu.json).
 
 **Layouts:**
 
@@ -44,15 +42,23 @@ Note: Standalone files use `panel:` with generic web URLs. Menu.json inline uses
 
 ## Start URL
 
+**Via VPS (primary):**
 ```
-https://msx.benzac.de/index.html?start=menu:https://evgeniy9607.github.io/msx/start.json
+msx.benzac.de/index.html?start=menu:https://xxitv.ru/msx/start.json
+```
+
+**Via GitHub Pages (fallback):**
+```
+msx.benzac.de/index.html?start=menu:https://evgeniy9607.github.io/msx/start.json
 ```
 
 Note: prefix is `menu:` (not `content:`). This is what enables the sidebar layout.
 
 ## Deployment
 
-Static files hosted on GitHub Pages from the `main` branch. Push to `main` → wait ~1 minute → changes live. No build process.
+**GitHub Pages:** static files from `main` branch. Push to `main` → ~1 min → live. Menu.json uses `github.io` URLs for assets, `xxitv.ru` for API.
+
+**VPS:** files in `/opt/msx/static/` (git clone of this repo). After push, run `deploy/sync.js` to pull changes. VPS menu.json uses `xxitv.ru` URLs (auto-replaced on sync). Deploy scripts require `deploy/.env` file (not in repo).
 
 ## MSX JSON Reference
 
