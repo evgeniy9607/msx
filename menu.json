@@ -234,11 +234,11 @@
             "action": "panel:https://www.ivi.ru/animation"
           },
           {
-            "label": "Мульт Россия",
-            "sublabel": "Советские мультфильмы",
-            "image": "https://www.google.com/s2/favicons?domain=smotrim.ru&sz=128",
+            "label": "Мульт",
+            "sublabel": "Детский канал",
+            "image": "https://www.google.com/s2/favicons?domain=mult-online.ru&sz=128",
             "color": "#E8192C",
-            "action": "link:https://tv.smotrim.ru"
+            "action": "panel:https://smotrim.ru/brand/57819"
           }
         ]
       }
