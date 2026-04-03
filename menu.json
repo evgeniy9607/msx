@@ -139,7 +139,7 @@
             "image": "https://www.google.com/s2/favicons?domain=youtube.com&sz=128",
             "color": "#FF0000",
             "action": "link:https://www.youtube.com/tv#/"
-          },
+          }
         ]
       }
     },
