@@ -147,7 +147,7 @@
             "color": "#1A237E",
             "tag": "NO ADS",
             "tagColor": "#4CAF50",
-            "action": "panel:https://smarttubeapp.github.io"
+            "action": "link:https://smarttubeapp.github.io"
           }
         ]
       }
