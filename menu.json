@@ -219,7 +219,7 @@
             "color": "#0D47A1",
             "badge": "TOP",
             "badgeColor": "#E50000",
-            "action": "panel:https://www.iptvsmarters.com"
+            "action": "link:https://www.iptvsmarters.com"
           },
           {
             "label": "Stremio",
