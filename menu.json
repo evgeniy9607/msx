@@ -228,7 +228,7 @@
             "color": "#6C3FC5",
             "tag": "NEW",
             "tagColor": "#4CAF50",
-            "action": "panel:https://web.stremio.com"
+            "action": "link:https://www.stremio.com"
           }
         ]
       }
