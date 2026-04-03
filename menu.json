@@ -190,6 +190,13 @@
             "action": "link:https://lampa.stream"
           },
           {
+            "label": "TorrServer",
+            "sublabel": "Онлайн-просмотр торрентов",
+            "image": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
+            "color": "#2E7D32",
+            "action": "panel:https://xxitv.ru/torrserver/"
+          },
+          {
             "label": "Filmix",
             "sublabel": "Фильмы и сериалы",
             "image": "https://www.google.com/s2/favicons?domain=filmix.tv&sz=128",
