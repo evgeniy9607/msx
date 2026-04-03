@@ -193,10 +193,12 @@
           },
           {
             "label": "TorrServer",
-            "sublabel": "Онлайн-просмотр торрентов",
+            "sublabel": "Используйте через Lampa",
             "image": "https://www.google.com/s2/favicons?domain=github.com&sz=128",
             "color": "#2E7D32",
-            "action": "panel:https://xxitv.ru/torrserver/"
+            "tag": "API",
+            "tagColor": "#2E7D32",
+            "action": "panel:https://lampa.mx"
           },
           {
             "label": "Filmix",
