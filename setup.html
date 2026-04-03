@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lampa — Настройка плагинов</title>
+    <title>Lampa — Настройка</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -11,268 +11,227 @@
             background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 60%, #16213e 100%);
             color: #e0e0e0;
             min-height: 100vh;
-            padding: 40px 20px;
+            padding: 60px 40px;
         }
-        .container { max-width: 800px; margin: 0 auto; }
+        .tv-layout { max-width: 1200px; margin: 0 auto; display: flex; gap: 40px; }
+        .left { flex: 1; }
+        .right { width: 320px; display: flex; flex-direction: column; align-items: center; justify-content: flex-start; padding-top: 20px; }
         h1 {
-            text-align: center;
-            font-size: 2em;
-            margin-bottom: 10px;
+            font-size: 2.8em;
+            margin-bottom: 8px;
             background: linear-gradient(90deg, #FFD700, #FFA500);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
-        .subtitle {
-            text-align: center;
-            color: #888;
-            margin-bottom: 40px;
-            font-size: 0.95em;
-        }
-        .section {
-            background: rgba(255,255,255,0.05);
-            border-radius: 12px;
-            padding: 24px;
-            margin-bottom: 20px;
-            border: 1px solid rgba(255,255,255,0.08);
-        }
-        .section h2 {
-            font-size: 1.2em;
-            margin-bottom: 16px;
-            color: #FFD700;
-        }
-        .plugin {
+        .subtitle { color: #888; margin-bottom: 40px; font-size: 1.2em; }
+        .plugin-row {
             display: flex;
-            justify-content: space-between;
             align-items: center;
-            background: rgba(255,255,255,0.03);
-            border-radius: 8px;
-            padding: 14px 18px;
-            margin-bottom: 10px;
+            background: rgba(255,255,255,0.04);
+            border-radius: 10px;
+            padding: 18px 24px;
+            margin-bottom: 12px;
             border: 1px solid rgba(255,255,255,0.06);
-            transition: background 0.2s;
         }
-        .plugin:hover { background: rgba(255,255,255,0.08); }
-        .plugin-info h3 { font-size: 1em; color: #fff; margin-bottom: 4px; }
-        .plugin-info p { font-size: 0.85em; color: #999; }
-        .plugin-url {
-            font-family: 'Courier New', monospace;
-            font-size: 0.75em;
-            color: #4FC3F7;
-            background: rgba(79,195,247,0.1);
-            padding: 6px 12px;
-            border-radius: 6px;
-            word-break: break-all;
-            cursor: pointer;
-            border: 1px solid rgba(79,195,247,0.2);
-            transition: all 0.2s;
-        }
-        .plugin-url:hover { background: rgba(79,195,247,0.2); }
-        .plugin-url.copied {
-            background: rgba(76,175,80,0.2);
-            border-color: rgba(76,175,80,0.4);
-            color: #4CAF50;
-        }
-        .badge {
-            display: inline-block;
-            padding: 2px 8px;
-            border-radius: 4px;
-            font-size: 0.7em;
-            font-weight: bold;
-            margin-left: 8px;
-        }
-        .badge-required { background: #E53935; color: #fff; }
-        .badge-recommended { background: #FF9800; color: #fff; }
-        .badge-optional { background: #607D8B; color: #fff; }
-        .steps {
-            counter-reset: step;
-            list-style: none;
-            padding: 0;
-        }
-        .steps li {
-            counter-increment: step;
-            padding: 10px 0 10px 40px;
-            position: relative;
-            color: #ccc;
-            font-size: 0.95em;
-        }
-        .steps li::before {
-            content: counter(step);
-            position: absolute;
-            left: 0;
-            width: 28px;
-            height: 28px;
+        .plugin-num {
+            width: 36px; height: 36px;
             border-radius: 50%;
             background: #FFD700;
             color: #000;
             font-weight: bold;
-            font-size: 0.85em;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            font-size: 1em;
+            display: flex; align-items: center; justify-content: center;
+            margin-right: 18px;
+            flex-shrink: 0;
         }
-        .config-block {
+        .plugin-name { font-size: 1.3em; color: #fff; flex: 1; }
+        .plugin-desc { font-size: 0.95em; color: #999; }
+        .plugin-url {
+            font-family: 'Courier New', monospace;
+            font-size: 1em;
+            color: #4FC3F7;
+            word-break: break-all;
+        }
+        .badge {
+            display: inline-block;
+            padding: 3px 10px;
+            border-radius: 4px;
+            font-size: 0.75em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .badge-req { background: #E53935; color: #fff; }
+        .badge-rec { background: #FF9800; color: #fff; }
+        .badge-opt { background: #546E7A; color: #fff; }
+        .section-title {
+            font-size: 1.5em;
+            color: #FFD700;
+            margin: 30px 0 16px;
+        }
+        .config-row {
             background: rgba(0,0,0,0.3);
             border-radius: 8px;
+            padding: 14px 20px;
+            margin-bottom: 8px;
+        }
+        .config-label { font-size: 0.85em; color: #888; }
+        .config-value { font-family: 'Courier New', monospace; font-size: 1.2em; color: #4FC3F7; }
+        .qr-block {
+            background: #fff;
+            border-radius: 16px;
             padding: 16px;
-            margin: 12px 0;
-            border: 1px solid rgba(255,255,255,0.06);
+            margin-bottom: 20px;
         }
-        .config-block label {
-            display: block;
-            font-size: 0.8em;
-            color: #888;
-            margin-bottom: 4px;
-        }
-        .config-block .value {
-            font-family: 'Courier New', monospace;
-            color: #4FC3F7;
-            font-size: 0.95em;
-            cursor: pointer;
-        }
-        .config-block .value:hover { color: #81D4FA; }
-        .footer {
+        .qr-block img { display: block; width: 280px; height: 280px; }
+        .qr-hint {
             text-align: center;
-            margin-top: 40px;
-            color: #555;
-            font-size: 0.8em;
+            color: #FFD700;
+            font-size: 1.1em;
+            font-weight: bold;
+            margin-bottom: 12px;
         }
-        .copy-toast {
-            position: fixed;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #4CAF50;
-            color: #fff;
-            padding: 12px 24px;
-            border-radius: 8px;
+        .qr-sub {
+            text-align: center;
+            color: #888;
             font-size: 0.9em;
-            display: none;
-            z-index: 100;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+            max-width: 280px;
+        }
+        .step-hint {
+            background: rgba(255,215,0,0.1);
+            border: 1px solid rgba(255,215,0,0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+        }
+        .step-hint h3 { color: #FFD700; margin-bottom: 10px; font-size: 1.2em; }
+        .step-hint ol { padding-left: 20px; }
+        .step-hint li { font-size: 1.05em; color: #ccc; margin-bottom: 6px; }
+        .step-hint strong { color: #fff; }
+        @media (max-width: 900px) {
+            .tv-layout { flex-direction: column; }
+            .right { width: 100%; align-items: center; }
+            body { padding: 20px; }
+            h1 { font-size: 2em; }
+        }
+        @media (min-width: 1400px) {
+            body { font-size: 18px; }
+            h1 { font-size: 3.2em; }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Lampa — Плагины и настройка</h1>
-        <p class="subtitle">Нажмите на URL чтобы скопировать. Вставьте в Lampa → Настройки → Дополнения</p>
+    <div class="tv-layout">
+        <div class="left">
+            <h1>Lampa — Плагины</h1>
+            <p class="subtitle">Откройте Lampa → Настройки → Дополнения → Добавить</p>
 
-        <div class="section">
-            <h2>Плагины</h2>
-
-            <div class="plugin">
-                <div class="plugin-info">
-                    <h3>Online_Mod <span class="badge badge-required">ОБЯЗАТЕЛЬНО</span></h3>
-                    <p>Онлайн-просмотр фильмов и сериалов (Lumex, HDrezka, Collaps)</p>
+            <div class="plugin-row">
+                <div class="plugin-num">1</div>
+                <div>
+                    <div class="plugin-name">Online_Mod <span class="badge badge-req">MUST HAVE</span></div>
+                    <div class="plugin-desc">Онлайн-просмотр: Lumex, HDrezka, Collaps</div>
+                    <div class="plugin-url">nb557.github.io/plugins/online_mod.js</div>
                 </div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://nb557.github.io/plugins/online_mod.js</div>
 
-            <div class="plugin" style="margin-top: 16px;">
-                <div class="plugin-info">
-                    <h3>Ratings <span class="badge badge-recommended">РЕКОМЕНДУЕТСЯ</span></h3>
-                    <p>Рейтинги КиноПоиск и IMDb на карточках фильмов</p>
+            <div class="plugin-row">
+                <div class="plugin-num">2</div>
+                <div>
+                    <div class="plugin-name">Ratings <span class="badge badge-rec">РЕК</span></div>
+                    <div class="plugin-desc">Рейтинги КиноПоиск + IMDb</div>
+                    <div class="plugin-url">nb557.github.io/plugins/ratings.js</div>
                 </div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://nb557.github.io/plugins/ratings.js</div>
 
-            <div class="plugin" style="margin-top: 16px;">
-                <div class="plugin-info">
-                    <h3>Recommended <span class="badge badge-recommended">РЕКОМЕНДУЕТСЯ</span></h3>
-                    <p>Персональные рекомендации на главной странице</p>
+            <div class="plugin-row">
+                <div class="plugin-num">3</div>
+                <div>
+                    <div class="plugin-name">Recommended <span class="badge badge-rec">РЕК</span></div>
+                    <div class="plugin-desc">Персональные рекомендации фильмов</div>
+                    <div class="plugin-url">nb557.github.io/plugins/recommended.js</div>
                 </div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://nb557.github.io/plugins/recommended.js</div>
 
-            <div class="plugin" style="margin-top: 16px;">
-                <div class="plugin-info">
-                    <h3>Collections <span class="badge badge-optional">ОПЦИОНАЛЬНО</span></h3>
-                    <p>Подборки и коллекции фильмов</p>
+            <div class="plugin-row">
+                <div class="plugin-num">4</div>
+                <div>
+                    <div class="plugin-name">Collections <span class="badge badge-opt">ОПЦ</span></div>
+                    <div class="plugin-desc">Подборки и коллекции</div>
+                    <div class="plugin-url">nb557.github.io/plugins/collections.js</div>
                 </div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://nb557.github.io/plugins/collections.js</div>
 
-            <div class="plugin" style="margin-top: 16px;">
-                <div class="plugin-info">
-                    <h3>Interface Mod <span class="badge badge-optional">ОПЦИОНАЛЬНО</span></h3>
-                    <p>Модификация интерфейса и темы оформления</p>
+            <div class="plugin-row">
+                <div class="plugin-num">5</div>
+                <div>
+                    <div class="plugin-name">Interface Mod <span class="badge badge-opt">ОПЦ</span></div>
+                    <div class="plugin-desc">Темы оформления</div>
+                    <div class="plugin-url">nb557.github.io/plugins/interface_mod.js</div>
                 </div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://nb557.github.io/plugins/interface_mod.js</div>
 
-            <div class="plugin" style="margin-top: 16px;">
-                <div class="plugin-info">
-                    <h3>Weather <span class="badge badge-optional">ОПЦИОНАЛЬНО</span></h3>
-                    <p>Виджет погоды на главном экране</p>
-                </div>
+            <div class="section-title">TorrServer</div>
+            <p style="color:#999; margin-bottom: 12px;">Lampa → Настройки → TorrServer</p>
+
+            <div class="config-row">
+                <div class="config-label">Адрес:</div>
+                <div class="config-value">https://xxitv.ru/torrserver</div>
             </div>
-            <div class="plugin-url" onclick="copyUrl(this)">https://bylampa.github.io/weather.js</div>
+            <div class="config-row">
+                <div class="config-label">Логин:</div>
+                <div class="config-value">admin</div>
+            </div>
+            <div class="config-row">
+                <div class="config-label">Пароль:</div>
+                <div class="config-value">TorrMsx2026!</div>
+            </div>
+
+            <div class="step-hint">
+                <h3>Как ввести URL на ТВ</h3>
+                <ol>
+                    <li>Откройте <strong>Lampa</strong> → <strong>Настройки</strong> → <strong>Дополнения</strong></li>
+                    <li>Нажмите <strong>«Добавить»</strong></li>
+                    <li>Введите URL с пульта, перед URL добавьте <strong>https://</strong></li>
+                    <li>Повторите для каждого плагина</li>
+                    <li>Перезагрузите Lampa</li>
+                </ol>
+            </div>
         </div>
 
-        <div class="section">
-            <h2>TorrServer (торрент-стриминг)</h2>
-            <p style="color: #999; font-size: 0.9em; margin-bottom: 16px;">
-                Lampa → Настройки → TorrServer → вставьте адрес и авторизацию
-            </p>
-            <div class="config-block">
-                <label>Адрес сервера:</label>
-                <div class="value" onclick="copyText(this)">https://xxitv.ru/torrserver</div>
+        <div class="right">
+            <div class="qr-hint">Сканируй с телефона</div>
+            <div class="qr-block">
+                <img id="qr" alt="QR код">
             </div>
-            <div class="config-block">
-                <label>Логин:</label>
-                <div class="value" onclick="copyText(this)">admin</div>
-            </div>
-            <div class="config-block">
-                <label>Пароль:</label>
-                <div class="value" onclick="copyText(this)">TorrMsx2026!</div>
-            </div>
+            <div class="qr-sub">Откроется эта же страница на телефоне — оттуда удобно копировать URL</div>
         </div>
-
-        <div class="section">
-            <h2>Как установить</h2>
-            <ol class="steps">
-                <li>Откройте <strong>Lampa</strong> на телевизоре</li>
-                <li>Перейдите в <strong>Настройки → Дополнения</strong></li>
-                <li>Нажмите <strong>"Добавить"</strong></li>
-                <li>Вставьте URL плагина (скопируйте выше)</li>
-                <li>Повторите для каждого плагина</li>
-                <li>Для TorrServer: <strong>Настройки → TorrServer</strong> → вставьте адрес</li>
-                <li>Перезагрузите Lampa</li>
-            </ol>
-        </div>
-
-        <p class="footer">XXI VEK Smart TV — xxitv.ru</p>
     </div>
 
-    <div class="copy-toast" id="toast">Скопировано!</div>
-
     <script>
-        function copyUrl(el) {
-            var text = el.textContent;
-            navigator.clipboard.writeText(text).then(function() {
-                el.classList.add('copied');
-                el.textContent = 'Скопировано!';
-                showToast();
-                setTimeout(function() {
-                    el.classList.remove('copied');
-                    el.textContent = text;
-                }, 2000);
-            }).catch(function() {
-                prompt('Скопируйте URL:', text);
+        // Generate QR code via Google Charts API
+        var url = 'https://xxitv.ru/msx/setup.html';
+        document.getElementById('qr').src = 'https://chart.googleapis.com/chart?cht=qr&chs=280x280&chl=' + encodeURIComponent(url) + '&choe=UTF-8';
+
+        // On phone/tablet — make URLs clickable for copy
+        if ('ontouchstart' in window || navigator.maxTouchPoints > 0) {
+            document.querySelectorAll('.plugin-url, .config-value').forEach(function(el) {
+                el.style.cursor = 'pointer';
+                el.addEventListener('click', function() {
+                    var text = el.textContent.trim();
+                    if (el.classList.contains('plugin-url') && !text.startsWith('http')) {
+                        text = 'https://' + text;
+                    }
+                    navigator.clipboard.writeText(text).then(function() {
+                        var orig = el.textContent;
+                        el.textContent = 'Скопировано!';
+                        el.style.color = '#4CAF50';
+                        setTimeout(function() {
+                            el.textContent = orig;
+                            el.style.color = '';
+                        }, 1500);
+                    });
+                });
             });
-        }
-        function copyText(el) {
-            var text = el.textContent;
-            navigator.clipboard.writeText(text).then(function() {
-                showToast();
-            }).catch(function() {
-                prompt('Скопируйте:', text);
-            });
-        }
-        function showToast() {
-            var toast = document.getElementById('toast');
-            toast.style.display = 'block';
-            setTimeout(function() { toast.style.display = 'none'; }, 1500);
         }
     </script>
 </body>
