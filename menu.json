@@ -140,15 +140,6 @@
             "color": "#FF0000",
             "action": "link:https://www.youtube.com/tv#/"
           },
-          {
-            "label": "SmartTube",
-            "sublabel": "YouTube без рекламы",
-            "image": "https://www.google.com/s2/favicons?domain=smarttubeapp.github.io&sz=128",
-            "color": "#1A237E",
-            "tag": "NO ADS",
-            "tagColor": "#4CAF50",
-            "action": "link:https://smarttubeapp.github.io"
-          }
         ]
       }
     },
@@ -196,7 +187,9 @@
             "sublabel": "Каталог фильмов и сериалов",
             "image": "https://www.google.com/s2/favicons?domain=lampa.stream&sz=128",
             "color": "#E65100",
-            "action": "link:https://lampa.stream"
+            "badge": "TOP",
+            "badgeColor": "#E50000",
+            "action": "panel:https://lampa.mx"
           },
           {
             "label": "TorrServer",
@@ -213,21 +206,12 @@
             "action": "link:https://filmix.tv/"
           },
           {
-            "label": "IPTV Smarters",
-            "sublabel": "IPTV плеер Xtream/M3U",
-            "image": "https://www.google.com/s2/favicons?domain=iptvsmarters.com&sz=128",
-            "color": "#0D47A1",
-            "badge": "TOP",
-            "badgeColor": "#E50000",
-            "action": "link:https://www.iptvsmarters.com"
-          },
-          {
             "label": "Stremio",
-            "sublabel": "Медиацентр с аддонами",
+            "sublabel": "Медиацентр с аддонами (LG)",
             "image": "https://www.google.com/s2/favicons?domain=stremio.com&sz=128",
             "color": "#6C3FC5",
-            "tag": "NEW",
-            "tagColor": "#4CAF50",
+            "tag": "LG",
+            "tagColor": "#A50034",
             "action": "link:https://www.stremio.com"
           }
         ]
