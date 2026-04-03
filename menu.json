@@ -165,7 +165,7 @@
           {
             "icon": "live-tv",
             "label": "ТВ Каналы",
-            "data": "http://155.212.247.44/api/tv"
+            "data": "https://xxitv.ru/api/tv"
           },
           {
             "icon": "settings-input-antenna",
